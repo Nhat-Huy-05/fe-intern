@@ -1,7 +1,8 @@
-var number = 1; //Tiền tố
+Java Script(JS): đóng vai trò giúp các trang web trở nên sống động hơn, tạo các tính năng tương tác, động. 
 
-console.log(++number); // 2
-console.log(number); // 2
+- Tính tương tác cao: JavaScript giúp trang web phản hồi hành động của người dùng mà không cần tải lại trang (nghĩa là viết code xong rồi save nó sẽ tự load luôn).
+- Ngôn ngữ Client - side và Server - side: JavaScript hiện nay (nhờ Node.js) có thể hoạt động trên máy chủ nhằm quản lý dữ liệu và yêu cầu HTTP.
+- Phổ biến
+- Linh hoạt: JavaScript dùng để phát triển không chỉ website mà còn là ứng dụng di động, ứng dụng máy tính, game,…
 
-console.log(++number); // 3
-console.log(number); // 3
+Node.js là một môi trường chạy(Runtime Environment) cho phép chạy mã JavaScript bên ngoài trình duyệt web.
