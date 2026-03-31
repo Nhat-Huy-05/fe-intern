@@ -1,0 +1,10 @@
+//setTimeout
+setTimeout(function () {
+
+alert(’hello world’); }, 3000) //chạy sau 3 giây.
+
+//setInterval
+setInterval(function() {
+ alert('Xin chao ');
+}, 2000)
+
