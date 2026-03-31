@@ -1,0 +1,7 @@
+var number = 1; //Tiền tố
+
+console.log(++number); // 2
+console.log(number); // 2
+
+console.log(++number); // 3
+console.log(number); // 3
