@@ -34,7 +34,7 @@ Cú pháp:
 Cú pháp:
 
 Dòng 1
-//khoảng trống 
+``khoảng trống`` 
 Dòng 2
 
 
