@@ -21,11 +21,11 @@ Một dấu # tương đương h1, 2 dấu # tương đương h2...
 
 Cú pháp:
 
+```
 #Tiêu đề 1
-
 #Tiêu đề 2
-
 #Tiêu đề 3
+```
 
 2, Đoạn văn - Paragraph
 
@@ -34,7 +34,9 @@ Cú pháp:
 Cú pháp:
 
 Dòng 1
-``khoảng trống`` 
+
+``khoảng trống``
+
 Dòng 2
 
 
