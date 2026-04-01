@@ -217,6 +217,42 @@ ___
 ---
 ___
 
+2, Liên kết - Link
+
+Để chèn trực tiếp, chỉ cần paste thẳng vào.
+
+Để dẫn liên kết, ta xài ``[text](link)``.
+
+Cú pháp:
+```
+Trực tiếp: https://github.com/Nhat-Huy-05
+Gián tiếp: [Github](https://github.com/Nhat-Huy-05)
+```
+Kết quả:
+
+Trực tiếp: https://github.com/Nhat-Huy-05
+
+Gián tiếp: [Github](https://github.com/Nhat-Huy-05)
+
+3, Hình ảnh - Image
+
+Để chèn trực tiếp, có thể paste thẳng.
+
+Để dẫn ảnh, ta dùng ``![text](link ảnh)``.
+
+Hoặc ``![](link ảnh)`` nếu không cần chữ.
+
+Cú pháp:
+```
+Trực tiếp: https://inkythuatso.com/uploads/thumbnails/800/2023/03/1-anh-trang-den-meo-den-heinz-inkythuatso-02-16-04-57.jpg
+Gián tiếp: ![Image](https://inkythuatso.com/uploads/thumbnails/800/2023/03/1-anh-trang-den-meo-den-heinz-inkythuatso-02-16-04-57.jpg)
+```
+Kết quả:
+
+Gián tiếp:
+
+![GitHub](https://inkythuatso.com/uploads/thumbnails/800/2023/03/1-anh-trang-den-meo-den-heinz-inkythuatso-02-16-04-57.jpg).
+
 
 
 
