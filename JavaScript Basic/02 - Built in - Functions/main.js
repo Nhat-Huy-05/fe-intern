@@ -22,4 +22,7 @@ prompt('Xac nhan do tuoi');
 setTimeout(function (){
     alert('Hello World'); }, 2000) //chạy sau 2 giây.
 
-//6.Set Interval 
+//6.Set Interval: Thực thi code liên tục sau 1 khoảng thời gian(tính theo mili giây)
+setInterval(function (){
+    alert('Hello World'); }, 3000)// chạy liên tục sau mỗi 3 giây.
+
