@@ -165,6 +165,23 @@ Kết quả:
 * Mục thứ nhất
 * Mục thứ hai
 
+4,Khối lệnh - Block Code
+
+Dùng để viết 1 đoạn code, dùng 3 dấu ` ở trước và sau đoạn đó.(có thể thêm format ngôn ngữ)
+
+Cú pháp:
+
+<img width="160" height="86" alt="image" src="https://github.com/user-attachments/assets/b6bb95a2-67e2-4dae-a2e7-15c443927c36" />
+
+
+Kết quả:
+```javascript
+var x = 1;
+console.log(x);
+```
+5,Bảng - Table
+
+
 
 
 
