@@ -32,13 +32,13 @@ Cú pháp:
 Để xuống dòng giữa các văn bản p, ta cần 1 dòng trống để tách các dòng văn bản.
 
 Cú pháp:
-
+```
 Dòng 1
 
 ``khoảng trống``
 
 Dòng 2
-
+```
 
 
 
