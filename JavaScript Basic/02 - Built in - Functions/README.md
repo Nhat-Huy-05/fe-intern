@@ -1,4 +1,4 @@
-# 2. Các hàm Built-in phổ biến
+# Các hàm Built-in phổ biến
 - `alert()`: Hiển thị hộp thoại thông báo.
 - `console`: `log()`, `warn()`, `error()` dùng để gỡ lỗi.
 - `confirm()`: Xác nhận người dùng (OK/Cancel).
