@@ -245,30 +245,34 @@ Hoặc ``![](link ảnh)`` nếu không cần chữ.
 Cú pháp:
 ```
 Trực tiếp: https://inkythuatso.com/uploads/thumbnails/800/2023/03/1-anh-trang-den-meo-den-heinz-inkythuatso-02-16-04-57.jpg
-Gián tiếp: ![Image](https://inkythuatso.com/uploads/thumbnails/800/2023/03/1-anh-trang-den-meo-den-heinz-inkythuatso-02-16-04-57.jpg)
+Gián tiếp: ![](https://inkythuatso.com/uploads/thumbnails/800/2023/03/1-anh-trang-den-meo-den-heinz-inkythuatso-02-16-04-57.jpg)
 ```
 Kết quả:
 
-Gián tiếp:
-
 ![GitHub](https://inkythuatso.com/uploads/thumbnails/800/2023/03/1-anh-trang-den-meo-den-heinz-inkythuatso-02-16-04-57.jpg).
 
+4,Biểu tượng cảm xúc - Con
 
+Tuỳ vào nền tảng có icon đó không, ký tự : và tên icon
 
+Cú pháp:
 
+<img width="135" height="103" alt="image" src="https://github.com/user-attachments/assets/f9b262f3-e309-4b92-8325-833bbc28e73a" />
 
+Kết quả:
 
+🐰
 
+5,Checkbox
 
+Để chèn checkbox(dùng cho to do list), ta đánh dấu như list và thêm 1 cặp ngoặc vuông.
 
+Cú pháp:
+```
+- [ ] Checkbox
+- [x] Checked
+```
+Kết quả:
 
-
-
-
-
-
-
-
-
-
-
+- [ ] Checkbox
+- [x] Checked
