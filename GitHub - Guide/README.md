@@ -20,14 +20,22 @@ Có thể viết loại tiêu đề h1,h2 bằng cách thêm dấu # vào đầu
 Một dấu # tương đương h1, 2 dấu # tương đương h2...
 
 Cú pháp:
-'''
+
 #Tiêu đề 1
 
 #Tiêu đề 2
 
 #Tiêu đề 3
-'''
+
 2, Đoạn văn - Paragraph
+
+Để xuống dòng giữa các văn bản p, ta cần 1 dòng trống để tách các dòng văn bản.
+
+Cú pháp:
+
+Dòng 1
+//khoảng trống 
+Dòng 2
 
 
 
