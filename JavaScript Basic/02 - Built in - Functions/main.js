@@ -18,4 +18,8 @@ confirm('Xac nhan dieu khoan');
 //4.Prompt: Lấy dữ liệu nhập từ người dùng
 prompt('Xac nhan do tuoi');
 
-//5.Set time out: Đoạn code chạy
+//5.Set timeout: Thực thi code 1 lần sau 1 khoảng thời gian(tính theo mili giây)
+setTimeout(function (){
+    alert('Hello World'); }, 2000) //chạy sau 2 giây.
+
+//6.Set Interval 
