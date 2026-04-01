@@ -40,5 +40,11 @@ Dòng 1
 Dòng 2
 ```
 
+3, Ghi chú - Comment
+
+Ta sử dụng cặp ký tự `` 
+
+4,
+
 
 
