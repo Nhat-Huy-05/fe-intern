@@ -181,6 +181,42 @@ console.log(x);
 ```
 5,Bảng - Table
 
+Để tạo bảng table, ta chỉ cần ngăn cách bởi dấu | và cách đầu bảng với thân bảng bằng :--
+(số dấu - tuỳ ý)
+
+Cú pháp:
+```
+| Cột 1 | Cột 2 | Cột 3 |
+| :-- | :-- | :-- |
+| A | B | C |
+| B | E | F |
+```
+Kết quả:
+``
+Số dấu - tuỳ ý nhằm chỉnh hàng đẹp với cân hơn
+``
+| Cột 1 | Cột 2 | Cột 3 |
+| :----- | :----| :--- |
+| A | B | C |
+| D | E | F | 
+
+III, Đặc biệt:
+
+1, Đường kẻ ngang - Horizonal rules
+
+Để tạo đường kẻ ngang, ta sử dụng 3 dấu * hoặc - hoặc _ trên 1 dòng.
+
+Cú pháp:
+```
+***
+---
+___
+```
+
+***
+---
+___
+
 
 
 
