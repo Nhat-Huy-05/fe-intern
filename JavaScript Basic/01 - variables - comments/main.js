@@ -1,1 +1,6 @@
-
+var FullName = 'Riyu';
+console.log(FullName);
+/* = là gán giá trị, lấy gtri bên phải 'Riyu' đẩy vào biến bên trái 'FullName'
+   ; dùng để kết thúc 1 dòng lệnh nào đó 
+   let: dùng để khai báo biến, tiện hơn var
+   */
