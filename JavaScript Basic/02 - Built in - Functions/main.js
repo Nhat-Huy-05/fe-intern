@@ -10,9 +10,12 @@ console.log(age);
 console.error(age); //in ra tb lỗi
 console.warn(age);  //in ra tb cảnh báo
 
-//3.Confirm: Hiển thị thông báo yêu cầu người dùng xác nhận (OK or No)
+//3.Confirm: Hiển thị thông báo yêu cầu người dùng xác nhận (OK or Cancel)
 /*Lưu ý: Trình duyệt sẽ tạm dừng chạy dòng code tiếp theo
         cho đến khi user nhấn chọn 1 trong 2 */
 confirm('Xac nhan dieu khoan');
-//4.Prompt: Lấy thông tin từ người dùng
+
+//4.Prompt: Lấy dữ liệu nhập từ người dùng
 prompt('Xac nhan do tuoi');
+
+//5.Set time out: Đoạn code chạy
