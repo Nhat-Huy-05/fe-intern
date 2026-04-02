@@ -27,5 +27,17 @@ Giải thích cụ thể về `++`,`--`:
 -`--x`: Giảm giá trị biến xuống 1 và trả về giá trị sau khi giảm.
 
 - **Toán tử so sánh:** `>`, `<`, `>=`, `<=`, `==`, `!=`, `===` (so sánh cả giá trị và kiểu dữ liệu), `!==`.
+
+| Toán tử so sánh | Ý nghĩa |
+| :-- | :-- |
+| == | Bằng |
+| != | Không bằng (khác) |
+| > | Lớn hơn |
+| <= | Bé hơn hoặc bằng |
+| >= | Lớn hơn hoặc bằng |
+| < | Bé hơn |
+| === | Phải bằng và cùng kiểu dữ liệu |
+| !== | Phải khác số và khác kiểu dữ liệu |
+
 - **Toán tử logic:** `&&` (And), `||` (Or), `!` (Not).
 - **Toán tử chuỗi:** Sử dụng dấu `+` để nối các chuỗi lại với nhau.
