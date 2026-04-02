@@ -59,6 +59,12 @@ Dùng để mô tả một thực thể cụ thể với các đặc điểm (Pr
 - **Property:** Lưu trạng thái (Ví dụ: `name: 'Huy'`).
 - **Method:** Lưu hành động (Ví dụ: `run: function() { ... }`).
 
+Cú pháp:
+```
+var object{
+    //kèm thêm dấu ; ở sau ngoặc nhọn
+}; 
+```
 ### 🔹 Array (Mảng)
 Là một danh sách các phần tử được sắp xếp theo thứ tự. Bản chất Array cũng là một Object đặc biệt.
 - **Cấu trúc:** `[item1, item2, ...]`.
