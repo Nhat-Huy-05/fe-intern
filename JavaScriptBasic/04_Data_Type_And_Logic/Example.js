@@ -9,7 +9,7 @@ var thuonghieu = 'May tinh MSI Gaming'; // Có thể dùng nháy đơn bao ngoà
 
 // 3. Boolean
 var isFinished = true;
-var isError = false;git push -u origin main
+var isError = false;
 
 // 4. Undefined (Biến chưa có giá trị)
 var studentName; 

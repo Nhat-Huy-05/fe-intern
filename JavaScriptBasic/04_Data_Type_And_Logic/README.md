@@ -20,6 +20,12 @@ Nội dung này tổng hợp về các kiểu dữ liệu trong JavaScript và c
 - **Function**: Một khối mã thực hiện một nhiệm vụ cụ thể.
 - **Object**: Lưu trữ dữ liệu dưới dạng cặp `key: value`.
 - **Array**: Một dạng đặc biệt của Object, lưu trữ danh sách theo thứ tự (index).
+var moto(){
+thuonghieu: yamaha,
+giatien: 15000000,
+di chuyen(), 
+doxang()
+};
 
 > **💡 Mẹo:** Sử dụng toán tử `typeof` để kiểm tra kiểu dữ liệu của một biến.
 > *Chú ý: `typeof null` sẽ trả về `"object"` (đây là một lỗi lịch sử của JS).*
