@@ -18,6 +18,7 @@ Giải thích cụ thể về `++`,`--`:
 | /= | x/=y | x = x / y |
 | **= | x**=y | x = x ** y |
 
+
 -`x++`: Tăng 1 giá trị biến lên 1 và trả về giá trị trước khi tăng.
 
 -`++x`: Tăng giá trị biến lên 1 và trả về giá trị sau khi tăng.

@@ -4,3 +4,4 @@ console.log(FullName);
    ; dùng để kết thúc 1 dòng lệnh nào đó 
    let: dùng để khai báo biến, tiện hơn var
    */
+//3 loại biến: var, const, let. 

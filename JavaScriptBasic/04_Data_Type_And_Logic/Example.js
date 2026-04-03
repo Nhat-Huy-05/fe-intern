@@ -9,7 +9,7 @@ var thuonghieu = 'May tinh MSI Gaming'; // Có thể dùng nháy đơn bao ngoà
 
 // 3. Boolean
 var isFinished = true;
-var isError = false;
+var isError = false;git push -u origin main
 
 // 4. Undefined (Biến chưa có giá trị)
 var studentName; 
@@ -75,7 +75,7 @@ console.log(!!zero); // false (Vì 0 là Falsy)
 
 //Phần 4: Toán tử TypeOf (Kiểm tra kiểu dữ liệu).
 
-console.log(typeof 100);        // "number"
+console.log(typeof 100);        // "number"git push -u origin main
 console.log(typeof 'Hello');    // "string"
 console.log(typeof true);       // "boolean"
 console.log(typeof undefined);  // "undefined"
