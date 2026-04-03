@@ -1,13 +1,13 @@
-# 📘 Git Basic Cheat Sheet
+# 📘 Git Basic Cheat Sheet 
 
-Tài liệu tóm tắt các câu lệnh Git cơ bản dành cho Front-end Intern để quản lý mã nguồn hiệu quả.
+Các câu lệnh GitHub cơ bản:
 
 ---
 
 ## 1. Khởi tạo và Cấu hình (Setup)
 Thiết lập danh tính và khởi tạo kho lưu trữ.
 
-* `git config --global user.name "Huy Nguyen"`: Cấu hình tên người dùng.
+* `git config --global user.name "Nguyen Van A"`: Cấu hình tên người dùng.
 * `git config --global user.email "email@example.com"`: Cấu hình email.
 * `git init`: Khởi tạo một Git repository mới tại thư mục hiện tại.
 * `git clone <url>`: Sao chép một repository từ GitHub về máy local.
@@ -53,10 +53,8 @@ Sử dụng khi lỡ tay làm sai hoặc muốn quay lại trạng thái cũ.
 
 ---
 
-> **Mẹo nhỏ:** Hãy sử dụng tiền tố trong commit để chuyên nghiệp hơn:
+> **Lưu ý:** Hãy sử dụng tiền tố trong commit :
 > - `feat:` (Tính năng mới - ví dụ: làm bài tập mới)
 > - `docs:` (Cập nhật tài liệu, file .md)
 > - `fix:` (Sửa lỗi code)
 > - `chore:` (Thay đổi cấu trúc thư mục, cấu hình)
-
-*Cập nhật lần cuối: 03/04/2026 bởi Huy Nguyen*
