@@ -30,4 +30,6 @@
 
 **Lưu ý khi dùng Visual Studio Code**:
 
-Câu lệnh ``Ctrl + Shift + V``: Dùng để hiển thị giao diện trong VS Code
+Câu lệnh ``Ctrl + Shift + V``: Dùng để hiển thị giao diện trong VS Code.
+
+Câu lệnh ``ni``: dùng để tạo 1 file hoặc 1 folder mới.
