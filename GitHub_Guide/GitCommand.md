@@ -27,3 +27,7 @@
 ## 5. Kiểm tra lịch sử
 * `git log`: Xem lịch sử tất cả các lần commit.
 * `git log --oneline`: Xem lịch sử rút gọn trên một dòng.
+
+**Lưu ý khi dùng Visual Studio Code**:
+
+Câu lệnh ``Ctrl + Shift + V``: Dùng để hiển thị giao diện trong VS Code
