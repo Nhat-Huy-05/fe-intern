@@ -12,7 +12,7 @@
 * `git add .`: Thêm tất cả các thay đổi vào vùng chờ.
 * `git commit -m "Ghi chú thay đổi"`: Lưu lại các thay đổi vào lịch sử kèm thông báo.
 
-## 3. Đồng bộ hóa (Remote)
+## 3. Đồng bộ hóa (Remote)  
 * `git remote add origin <url>`: Kết nối với kho lưu trữ trực tuyến (GitHub/GitLab).
 * `git push -u origin main`: Đẩy code lên nhánh chính và thiết lập theo dõi.
 * `git pull`: Lấy mã nguồn mới nhất từ trên mạng về máy.
@@ -20,6 +20,15 @@
 
 ## 4. Quản lý Nhánh (Branch)
 * `git branch`: Xem danh sách các nhánh hiện có.
+
+`branch `:
+
+-Làm việc chung: mỗi thành viên có thể làm việc tại 1 nhánh riêng, sau khi xong sẽ kiểm tra kỹ rồi mới nhập vào nhánh chính.
+
+-thử trên nhánh mới và nếu sai thì chỉ việc xoá nhánh đó đi.
+
+-Sửa lỗi ở 1 nhánh, vừa có thể phát triển ở nhánh khác mà code không bị lẫn lộn.
+
 * `git checkout -b <tên_nhánh>`: Tạo nhánh mới và chuyển sang nhánh đó.
 * `git checkout <tên_nhánh>`: Chuyển sang một nhánh đã tồn tại.
 * `git merge <tên_nhánh>`: Hợp nhất nhánh khác vào nhánh hiện tại.
