@@ -261,6 +261,40 @@ var result = triple(10);
 
 console.log(result);
 ```
+## Một số lưu ý trong Function
+
+### 1. Khi function đặt trùng tên?
+```javascript
+function showMessage(){
+  console.log('Message  1');
+}
+
+```
+Khi định nghĩa 2 function trùng tên,thì function định nghĩa sau sẽ `ghi đè` function định nghĩa trước.
+
+### 2. Khai báo biến trong hàm?
+```javascript
+function showMessage(){
+  var fullName ='Riyu';
+  console.log(fullName);
+}
+showMessage(); //Output: Riyu
+```
+Có thể khai báo(chỉ nằm trong `khối lệnh {}` đó thôi)
+
+### 3. Định nghĩa hàm trong hàm?
+```javascript
+function showMessage(){
+  function showMessage2(){
+    console.log('Mess 2');
+  }
+  showMessage2(); //showMessage2 đưa ra ngoài không thể gọi được
+}
+showMessage();
+//Định nghĩa 1 fun trong 1 fun(phạm vi sử dụng chỉ trong fun đó)
+//Định nghĩa trong 1 hàm được thực thi chỉ khi được gọi hàm đó.
+```
+
 
 
 
