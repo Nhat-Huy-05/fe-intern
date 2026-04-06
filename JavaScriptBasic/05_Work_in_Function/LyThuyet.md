@@ -302,6 +302,9 @@ function showMessage(){
 
 } //định nghĩa bằng fun
 ```
+Hoisting.
+Bạn có thể gọi hàm này trước khi nó được định nghĩa trong code. JavaScript engine sẽ "nhấc" các khai báo hàm lên trên cùng của scope trước khi thực thi.
+
 ## Expression function (được gán )
 ```javascript
 var showMessage2 = function(){
@@ -316,6 +319,22 @@ var myObject = {
 };
 ```
 Không có Hoisting: Bạn phải định nghĩa hàm trước khi gọi nó, nếu không sẽ bị lỗi ReferenceError.
+
+Bài tập:
+
+Tạo 2 hàm declarationFunction và expressionFunction thỏa mãn các yêu cầu sau đây:
+
+declarationFunction là 1 declaration function
+
+expressionFunction là 1 expression function
+```javascript
+function declarationFunction(){
+
+}
+var expressionFunction = function(){
+
+}
+```
 
 
 
