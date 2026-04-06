@@ -242,7 +242,25 @@ function sum(a, b) {
 var result = sum(20, 10);
 console.log(result);
 ```
+### Hoàn thành thử thách này bằng cách tạo hàm triple, hàm có 1 tham số x và trả về giá trị gấp 3 lần x. Ví dụ, x = 3 thì hàm triple sẽ trả về 9.
+```javascript
+function triple(x){
+ return x * 3;
+}
+var x = 3;
+console.log(x);
+```
+### Sử dụng hàm triple đã cho, hãy tạo biến result để lưu kết quả của 10 * 3.
+```javascript
+function triple(x) {
+    return x * 3;
+}
 
+// Gọi hàm triple với đối số là 10
+var result = triple(10); 
+
+console.log(result);
+```
 
 
 
