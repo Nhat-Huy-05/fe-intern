@@ -197,6 +197,44 @@ function triple(x){
 }
 triple(); //in ra undefined vì chưa truyền gtri vào.
 ```
+# 4,Return trong hàm:
+
+-`return`:kết quả đầu ra.
+
++,`trả về giá trị`
+
++,`dừng hàm ngay lập tức`
+
+Trường hợp không có `return`(chỉ in ra)
+```javascript
+function tinhTong(a, b) {
+    console.log(a + b);
+}
+
+let ketQua = tinhTong(5, 10); 
+// Màn hình hiện: 15
+// Nhưng biến ketQua lúc này là: undefined (vì hàm không trả về gì cả)
+```
+Trường hợp có `return`(Lấy giá trị để dùng)
+```javascript
+function tinhTong(a, b) {
+    return a + b; // Nhả kết quả ra ngoài
+}
+
+let ketQua = tinhTong(5, 10); 
+// ketQua bây giờ bằng 15.
+// Bạn có thể dùng nó để tính tiếp:
+console.log(ketQua * 2); // Kết quả: 30
+```
+
+Hoàn thành thử thách này bằng cách tạo hàm sum, hàm có 2 tham số a, b và trả về tổng của 2 tham số.
+```javascript
+function sum(a,b){
+    return a + b;
+}
+console.log(sum);
+```
+
 
 
 
