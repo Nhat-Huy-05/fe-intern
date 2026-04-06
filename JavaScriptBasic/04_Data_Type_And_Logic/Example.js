@@ -36,10 +36,10 @@ greeting();
 // 2. Object (Đối tượng)
 // Node: Dùng để mô tả một vật thể với nhiều thuộc tính 
 var myLaptop = {
-    thuonghieu: 'Dell',
-    ram: '16GB',
+    thuonghieu: 'Dell',   //thuộc tính(có các đặc điểm gì?)
+    ram: '16GB',        
     storage: '512GB',
-    turnOn: function() {
+    turnOn: function() { //phương thức(hành động gì?)
         console.log('Laptop đang khởi động...');
     }
 };
