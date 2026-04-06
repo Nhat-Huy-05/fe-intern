@@ -294,6 +294,29 @@ showMessage();
 //Định nghĩa 1 fun trong 1 fun(phạm vi sử dụng chỉ trong fun đó)
 //Định nghĩa trong 1 hàm được thực thi chỉ khi được gọi hàm đó.
 ```
+# Các loại function
+
+## Declaration function
+```javascript
+function showMessage(){
+
+} //định nghĩa bằng fun
+```
+## Expression function (được gán )
+```javascript
+var showMessage2 = function(){
+
+} //được gán cho 1 biến 
+```
+```javascript
+var myObject = {
+  myFunction: function(){
+
+  }
+};
+```
+Không có Hoisting: Bạn phải định nghĩa hàm trước khi gọi nó, nếu không sẽ bị lỗi ReferenceError.
+
 
 
 
