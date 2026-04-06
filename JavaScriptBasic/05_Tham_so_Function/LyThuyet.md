@@ -76,4 +76,44 @@ function tinhTong(a, b) {
 }
 ```
 
-2,Truyền tham số
+2, Arguments
+
+Khi thực hiện gọi hàm, những giá trị cụ thể mà bạn bỏ vào trong ngoặc được gọi là `Đối số`(Arguments).
+
+Ví dụ:
+
+Truyền 1 tham số:
+
+hello("Huy"); // "Huy" là đối số truyền cho tham số "name"
+
+Truyền nhiều tham số:
+
+tinhTong(5, 10); // a = 5, b = 10
+
+*Vòng for:
+
+-Dùng để lặp đi lặp lại 1 đoạn mã trong 1 số lần nhất định.
+
+Cú pháp:
+```javascript
+for (khởi_tạo; điều_kiện; bước_nhảy) {
+    // Đoạn mã sẽ được thực thi mỗi lần lặp
+}
+``` 
+
+Ví dụ:
+```javascript
+for (var i = 1; i <= 5; i++) {
+    console.log(i);
+}
+```
+
+Khởi tạo (var i = 1): Tạo ra một biến chạy i và gán giá trị bắt đầu là 1. Nó chỉ chạy duy nhất 1 lần khi bắt đầu vòng lặp.
+
+Điều kiện (i <= 5): Trước mỗi lần lặp, máy tính sẽ kiểm tra: "i có còn nhỏ hơn hoặc bằng 5 không?". Nếu Đúng thì chạy tiếp, nếu Sai thì dừng vòng lặp ngay lập tức.
+
+Bước nhảy (i++): Sau khi thực hiện xong đoạn mã bên trong {}, biến i sẽ được tăng lên 1 đơn vị (i++ tương đương i = i + 1).
+
+
+
+
