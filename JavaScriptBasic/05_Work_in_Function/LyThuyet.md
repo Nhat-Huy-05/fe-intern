@@ -1,4 +1,40 @@
-1,Tham số(Parameters)
+# 1,Kiến thức cơ bản về Hàm (Function)
+
+## 1. Hàm là gì?
+Hàm là một **khối mã (block of code)** được thiết kế để thực hiện một **nhiệm vụ cụ thể**. Thay vì viết đi viết lại một đoạn mã nhiều lần, ta gom chúng vào một hàm để tái sử dụng.
+
+
+
+---
+
+## 2. Các loại hàm
+Trong lập trình, hàm thường được chia làm hai nhóm chính:
+
+* **Built-in (Hàm có sẵn):** Là những hàm đã được ngôn ngữ lập trình (như JavaScript) xây dựng sẵn.
+    * *Ví dụ:* `console.log()`, `alert()`, `prompt()`.
+* **User-defined (Hàm tự định nghĩa):** Là những hàm do người lập trình tự viết ra để giải quyết các bài toán riêng biệt.
+
+---
+
+## 3. Tính chất của hàm
+Hàm có các đặc điểm vận hành sau:
+
+1.  **Tính trì hoãn:** Hàm không thực thi ngay khi được định nghĩa.
+2.  **Tính thực thi:** Mã bên trong hàm chỉ chạy khi hàm được **gọi** (invoke).
+3.  **Tính linh hoạt:** Có thể nhận dữ liệu đầu vào thông qua **tham số** (parameters).
+4.  **Tính trả về:** Có thể trả về một giá trị sau khi xử lý xong bằng từ khóa `return`.
+
+---
+
+## 4. Cách tạo hàm đầu tiên
+
+### Cú pháp cơ bản
+```javascript
+function tenHam() {
+    // Khối mã xử lý công việc cụ thể
+}
+```
+# 2,Tham số(Parameters)
 
 *,Định nghĩa:
 ```
@@ -76,7 +112,7 @@ function tinhTong(a, b) {
 }
 ```
 
-2, Arguments
+# 3, Arguments
 
 Khi thực hiện gọi hàm, những giá trị cụ thể mà bạn bỏ vào trong ngoặc được gọi là `Đối số`(Arguments).
 
@@ -141,6 +177,26 @@ Giải thích:
 
 - Lần 3: `param` : `'hello 3 '`.
  
+# Bài tập về tạo hàm sum:
+
+1. Hãy tạo 1 hàm có tên là sum có 2 tham số:
+
+Tham số thứ 1 là a
+
+Tham số thứ 2 là b
+```javascript
+function sum(a, b){
+    console.log(a +b);
+}
+sum(1, 2);
+```
+2. Hãy tạo 1 hàm có tên là triple có 1 tham số x:
+```javascript
+function triple(x){
+    console.log(x);
+}
+triple(); //in ra undefined vì chưa truyền gtri vào.
+```
 
 
 
