@@ -1,4 +1,4 @@
-function writeLog() {
-    console.log('Day la 1 dong log');
+function writeLog(message) {
+    console.log(message);
 }
-writeLog();
+writeLog('Text tin nhan');
