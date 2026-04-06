@@ -19,4 +19,7 @@ B6:Khi thêm cái gì vào repo (thêm tài liệu,sửa,xóa....nhớ ctrl+s),q
 B7:Giờ có thể commit,đưa lên repo.
 
 Câu lệnh dùng để commit và push:
+
+trước đó cần phải git add . vào đã nhằm nhận file.
+
 git commit -m"Ghi chú" && git push (nhằm đẩy lên git mà không cần ấn thủ công)
