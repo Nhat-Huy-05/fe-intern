@@ -1,8 +1,5 @@
-function tinhTong(a, b) {
-    return a + b; // Nhả kết quả ra ngoài
+function sum(a, b) {
+        return a + b;
 }
-
-let ketQua = tinhTong(5, 10); 
-// ketQua bây giờ bằng 15.
-// Bạn có thể dùng nó để tính tiếp:
-console.log(ketQua * 2); // Kết quả: 30
+var result = sum(20, 10);
+console.log(result);

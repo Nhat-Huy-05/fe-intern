@@ -205,7 +205,7 @@ triple(); //in ra undefined vì chưa truyền gtri vào.
 
 +,`dừng hàm ngay lập tức`
 
-Trường hợp không có `return`(chỉ in ra)
+## Trường hợp không có `return`(chỉ in ra)
 ```javascript
 function tinhTong(a, b) {
     console.log(a + b);
@@ -215,7 +215,7 @@ let ketQua = tinhTong(5, 10);
 // Màn hình hiện: 15
 // Nhưng biến ketQua lúc này là: undefined (vì hàm không trả về gì cả)
 ```
-Trường hợp có `return`(Lấy giá trị để dùng)
+## Trường hợp có `return`(Lấy giá trị để dùng)
 ```javascript
 function tinhTong(a, b) {
     return a + b; // Nhả kết quả ra ngoài
@@ -227,12 +227,20 @@ let ketQua = tinhTong(5, 10);
 console.log(ketQua * 2); // Kết quả: 30
 ```
 
-Hoàn thành thử thách này bằng cách tạo hàm sum, hàm có 2 tham số a, b và trả về tổng của 2 tham số.
+### Hoàn thành thử thách này bằng cách tạo hàm sum, hàm có 2 tham số a, b và trả về tổng của 2 tham số.
 ```javascript
 function sum(a,b){
     return a + b;
 }
 console.log(sum);
+```
+### Sử dụng hàm sum đã cho, hãy tạo biến result để lưu kết quả của phép cộng 2 số là 20 và 10.
+```javascript
+function sum(a, b) {
+        return a + b;
+}
+var result = sum(20, 10);
+console.log(result);
 ```
 
 
