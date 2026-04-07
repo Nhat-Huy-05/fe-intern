@@ -1,4 +1,4 @@
-Chuỗi trong JS
+# Chuỗi trong JS
 
 1. Tạo chuỗi
     - Các cách tạo chuỗi
@@ -9,7 +9,7 @@ Chuỗi trong JS
 4. Chú ý độ dài viết code
 5. Template string ES6
 
-# 1.Các cách tạo chuỗi
+## 1.Các cách tạo chuỗi
 
 Trong JS, ta có 3 cách chính khởi tạo chuỗi:
 
@@ -32,3 +32,6 @@ console.log(typeof fullName);
  Recommend: xài cách 1
  */
 ```
+## 2.Nên dùng cách nào? Lý do?
+
+
