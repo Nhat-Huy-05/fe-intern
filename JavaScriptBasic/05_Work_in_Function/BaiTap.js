@@ -28,7 +28,10 @@ showFavoriteFoods('ToFu','Ramen ');
         Expre Fun: tức là Gán giá trị
 */ 
 var tinhDienTich = function(rong, dai){
-    var DienTich = rong * dai;
-    return DienTich;
+//Gán 1 hàm không tên vào biến
+    var dientich = rong * dai;
+//Biến dientich có tính Private(local), chỉ dùng trong {}
+    return dientich;
 }
-console.log(tinhDienTich(3, 5));
+console.log(tinhDienTich(3, 5)); //KQ:15
+console.log(dientich);
