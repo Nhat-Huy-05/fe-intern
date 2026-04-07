@@ -34,4 +34,3 @@ var tinhDienTich = function(rong, dai){
     return dientich;
 }
 console.log(tinhDienTich(3, 5)); //KQ:15
-console.log(dientich);
