@@ -33,6 +33,19 @@ console.log(typeof fullName);
  */
 ```
 ## 2.Nên dùng cách nào? Lý do?
+1. Nháy đơn (`'`): Code sạch, dễ đọc.
+2. Backticks (\` `): Xuống dòng và truyền biến.
 
-`Back
+## 3.Kiểm tra Data Type
+
+Kiểm tra biến đó có phải chuỗi không, sử dụng `typeof`.
+```javascript
+var name = 'Huy';
+console.log(typeof name); //Outp: "String"
+```
+## 4.Một số case sử dụng Backslash(\)
+
+Backslash(Dấu gạch chéo ngược) 
+
+
 
