@@ -4,5 +4,5 @@
 function tinhHieu(a, b){
     return a - b;
 }
-var result = tinhHieu(5, 4);
+var result = tinhHieu(7, 3);
 console.log(result);
