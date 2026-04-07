@@ -34,4 +34,5 @@ console.log(typeof fullName);
 ```
 ## 2.Nên dùng cách nào? Lý do?
 
+`Back
 
