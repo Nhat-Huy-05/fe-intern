@@ -204,11 +204,11 @@ console.log("Hello"[2]);
 ```
 Bài tập về làm việc với chuỗi:
 
-      Cho trước chuỗi coursesStr chứa tên các khóa học cách nhau bởi dấu ,.
+1, Cho trước chuỗi coursesStr chứa tên các khóa học cách nhau bởi dấu ,.
 
-     Bạn hãy viết hàm strToArray nhận vào 1 tham số là str và trả về 1 mảng chứa tên các khóa học.
+Bạn hãy viết hàm strToArray nhận vào 1 tham số là str và trả về 1 mảng chứa tên các khóa học.
 
-     Gợi ý: Bạn có thể sử dụng phương thức split đã được học ở bài trước.
+Gợi ý: Bạn có thể sử dụng phương thức split đã được học ở bài trước.
 ```javascript
 var coursesStr = 'HTML & CSS, JavaScript, ReactJS';
  
@@ -219,7 +219,28 @@ console.log(strToArray(coursesStr))
 
 // Output: ['HTML & CSS', 'JavaScript', 'ReactJS']
 ```
+2, hoàn thành hàm getContentLength. 
+    
+Hàm này sẽ trả về độ dài của tham số content.
+```javascript    
+    function getContentLength(content) {
+    return content.length;
+}
 
+console.log(getContentLength('JavaScript'));
+console.log(getContentLength('Hello World'));
+```
+3, Hãy tạo hàm getUpperCaseName có 1 tham số là name, 
+
+hàm này sẽ trả về phiên bản chữ viết hoa của giá trị mà nó nhận được từ name.
+```javascript
+
+function getUpperCaseName(name){
+    return name.toUpperCase();
+}
+console.log(getUpperCaseName("Nguyen van a")) // "NGUYEN VAN A"
+console.log(getUpperCaseName("nGuyen vAn C")) // "NGUYEN VAN C"
+```
 
 
 
