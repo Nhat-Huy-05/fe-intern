@@ -1,3 +1,2 @@
-var char = "Hello";
-console.log("Hello"[2]);
-//l
+var array ="JavaScript";
+console.log(array.split(""));

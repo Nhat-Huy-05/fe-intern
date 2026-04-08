@@ -187,6 +187,10 @@ console.log(clean.trim());//"Hi"
 var array ="Cơm, Cháo, Gạo, Măng";
 console.log(array.split());
 //['Cơm, Cháo, Gạo, Măng']
+
+var array ="JavaScript";
+console.log(array.split(""));
+//['J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't']
 ```
 ## 9.Get character by Index(Lấy ký tự).
 
