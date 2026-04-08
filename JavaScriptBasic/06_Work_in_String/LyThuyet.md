@@ -96,7 +96,7 @@ const email = "hello everyone";
 
 # Làm việc với chuỗi
 
-1. Length
+1. Length (Thuộc Tính)
 2. Find index
 3. Cut string
 4. Replace
@@ -106,11 +106,13 @@ const email = "hello everyone";
 8. Split
 9. Get a character by index
 
+Lưu ý: mỗi length là thuộc tính(property:có sẵn, chỉ việc xem thôi), còn lại là phương thức(method: hành động muốn thực hiện trên chuỗi đó)
+
 ## 1.Length(Độ dài chuỗi)
 
 - Trả về số lượng ký tự trong chuỗi
 
-- Dùng `.length`.
+- Dùng `.length`. (không có `()` vì là thuộc tính)
 ```javascript
     var myString ="Hoc Tap!";
     console.log(myString.length) //8
