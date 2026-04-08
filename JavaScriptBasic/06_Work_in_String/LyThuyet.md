@@ -202,6 +202,23 @@ var char = "Hello";
 console.log("Hello"[2]);
 //l
 ```
+Bài tập về làm việc với chuỗi:
+
+      Cho trước chuỗi coursesStr chứa tên các khóa học cách nhau bởi dấu ,.
+
+     Bạn hãy viết hàm strToArray nhận vào 1 tham số là str và trả về 1 mảng chứa tên các khóa học.
+
+     Gợi ý: Bạn có thể sử dụng phương thức split đã được học ở bài trước.
+```javascript
+var coursesStr = 'HTML & CSS, JavaScript, ReactJS';
+ 
+function strToArray(str) {
+    return str.split(", ");//", " nhằm không dính khoảng trắng thừa.
+}
+console.log(strToArray(coursesStr)) 
+
+// Output: ['HTML & CSS', 'JavaScript', 'ReactJS']
+```
 
 
 
