@@ -56,3 +56,37 @@ numberObject.toFixed(6); // '1234.567890'
 (18).toString();     // '18'
 (17.3).toString();   // '17.3'
 ```
+# Kiểu số(Number) trong JS.
+
+1.  Tạo giá trị Number
+
+- Các cách tạo
+
+- Dùng cách nào? Tại sao?
+
+- Kiểm tra data type
+
+2. Làm việc với Number
+
+- To string
+
+- To Fixed
+## 1.Tạo giá trị Number
+
+- Các cách tạo:
+
++, Khai báo trực tiếp giá trị
+
++, Sử dụng từ khoá `new Number()`: khởi tạo dưới dạng 1 đối tượng.
+
+Ví dụ:
+```javascript
+// Cách 1: 
+var age = 25;
+var pi = 3.14;
+
+// Cách 2: Object (Không khuyến khích)
+var otherNumber = new Number(25);
+```
+
+
