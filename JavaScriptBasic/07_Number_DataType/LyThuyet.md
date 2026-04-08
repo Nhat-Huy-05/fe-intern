@@ -13,8 +13,8 @@ console.log(number);// thêm 3 số 0 vào.
 ```
 ## Đối tượng Number:
 | Phương thức | Vai trò |
-| :-- | :-- |
-| Number.isFinite() |
+| :- | :- |
+| Number.isFinite() | Xác định xem gtri đó là số hữu hạn hay không. Trả về Boolean(T/F) |
 | Number.isInteger() |
 | Number.parseFloat() |
 | Number.parseInt() |
