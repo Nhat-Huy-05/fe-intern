@@ -1,2 +1,2 @@
 var number = 2e3;
-console.log(number);
+console.log(number);// thêm 3 số 0 vào.
