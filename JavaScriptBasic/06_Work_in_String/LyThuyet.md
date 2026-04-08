@@ -64,8 +64,29 @@ Ví dụ: 'It\'s a sunny day'(không có  `\`,JS sẽ hiểu là chuỗi kết t
 var text = "Hello!";
 console.log(text.length); //outp: 6
 ```
-
 ## 6.Chú ý độ dài khi viết code.
+
+Để code dễ bảo trì, đọc tốt trên nhiều màn hình:
+
+- Độ dài tối đa: không quá 80-100 ký tự trên 1 line.
+
+- Cách xử lý: Nếu chuỗi quá dài, hãy ngắt dòng bằng cách sử dụng dấu +.
+
+## 7.Template String ES6
+
+- Interpolation(Truyền biến): sử dụng cú pháp `${variable}`.
+
+- Multi-line: Cho phép viết chuỗi trên nhiều dòng mà không cần dùng `\n`.
+
+Ví dụ:
+```javascript
+var user ="Học viên";
+var exercise = "JavaScript";
+//Cách cũ: "Chào " + user + ", bạn đang học " + exercise
+//Cách ES6:
+var mess = `Chào ${user}, Đang học ${exercise} tại đây`;
+console.log(mess);
+```
 
 
 
