@@ -108,14 +108,29 @@ const email = "hello everyone";
 
 ## 1.Length(Độ dài chuỗi)
 
--Trả về số lượng ký tự trong chuỗi
+- Trả về số lượng ký tự trong chuỗi
 ```javascript
     var myString ="Hoc Tap!";
     console.log(myString.length) //8
 ```
 ## 2.Find Index(Tìm vị trí)
 
--
+- Tìm vị trí xuất hiện `đầu tiên` của 1 chuỗi con(bắt đầu = 0)
+
+- Nếu ghi chuỗi không có trong chuỗi đó sẽ in ra `-1`.
+```javascript
+    var pos = "Let learn code";
+    console.log(pos.indexOf("learn")); //4
+    //Lưu ý:gặp chuỗi không có sẽ ra -1
+    //trường hợp trùng chữ sẽ ghi('chuỗi', vị trí) (tức là sẽ bắt đầu ở vị trí đó để đi tìm)
+                        //learn("learn", 4)
+```   
+## 3.Cut String(Cắt chuỗi)
+
+- Trích xuất 1 đoạn chuỗi từ `vị Trí A` tới `vị trí B`.
+```javascript
+
+``` 
 
 
 

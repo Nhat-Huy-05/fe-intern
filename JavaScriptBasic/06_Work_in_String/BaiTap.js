@@ -1,2 +1,3 @@
- var myString ="Hoc Tap!";
-    console.log(myString.length) //8
+    var pos = "Let learn code"
+    console.log(pos.indexOf("learn"));
+   
