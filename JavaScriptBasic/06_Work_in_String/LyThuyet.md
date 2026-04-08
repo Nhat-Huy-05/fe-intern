@@ -118,6 +118,8 @@ const email = "hello everyone";
 - Tìm vị trí xuất hiện `đầu tiên` của 1 chuỗi con(bắt đầu = 0)
 
 - Nếu ghi chuỗi không có trong chuỗi đó sẽ in ra `-1`.
+
+- Nếu cần tìm chuỗi con cuối, dùng: `lastIndexOf()`.
 ```javascript
     var pos = "Let learn code";
     console.log(pos.indexOf("learn")); //4
@@ -128,9 +130,13 @@ const email = "hello everyone";
 ## 3.Cut String(Cắt chuỗi)
 
 - Trích xuất 1 đoạn chuỗi từ `vị Trí A` tới `vị trí B`.
-```javascript
 
-``` 
+- Dùng `slice(vị trí đầu, cuối)` hoặc `slice(vị trí)`(cắt từ vị trí đó và lấy đoạn còn lại).
+```javascript
+    var myString = "Hoc Tap Code!";
+    console.log(myString.slice(4, 7));//Tap  
+```
+
 
 
 

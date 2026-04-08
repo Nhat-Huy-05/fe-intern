@@ -1,3 +1,2 @@
-    var pos = "Let learn code"
-    console.log(pos.indexOf("learn"));
-   
+ var myString = "Hoc Tap Code!";
+    console.log(myString.slice(4));
