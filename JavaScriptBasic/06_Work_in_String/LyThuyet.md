@@ -119,7 +119,7 @@ const email = "hello everyone";
 
 - Nếu ghi chuỗi không có trong chuỗi đó sẽ in ra `-1`.
 
-- Nếu cần tìm chuỗi con cuối, dùng: `lastIndexOf()`.
+- Nếu cần tìm chuỗi con cuối, dùng: `.lastIndexOf()`.
 ```javascript
     var pos = "Let learn code";
     console.log(pos.indexOf("learn")); //4
@@ -127,7 +127,7 @@ const email = "hello everyone";
     //trường hợp trùng chữ sẽ ghi('chuỗi', vị trí) (tức là sẽ bắt đầu ở vị trí đó để đi tìm)
                         //learn("learn", 4)
 ```   
-## 3.Cut String(Cắt chuỗi)
+## 3.Cut String(Cắt chuỗi).
 
 - Trích xuất 1 đoạn chuỗi từ `vị Trí A` tới `vị trí B`.
 
@@ -136,6 +136,20 @@ const email = "hello everyone";
     var myString = "Hoc Tap Code!";
     console.log(myString.slice(4, 7));//Tap  
 ```
+## 4.Replace(ghi đè).
+
+- Thay thế 1 cụm từ bằng 1 cụm từ khác.
+
+- Dùng `.replace("chuỗi cần thay thế", "chuỗi mới bỏ vào")`.
+```javascript
+var newString = "Học C++";
+console.log(newString.replace("C++", "Java"));
+//Học Java 
+```
+
+## 5. Convert to Upper Case(Viết hoa)
+
+- Chuyển tất cả ký tự sang chữ in hoa.
 
 
 

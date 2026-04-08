@@ -1,2 +1,2 @@
- var myString = "Hoc Tap Code!";
-    console.log(myString.slice(4));
+var newString = "Học C++";
+console.log(newString.replace("C++", "Java"));
