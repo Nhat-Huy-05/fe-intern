@@ -87,6 +87,39 @@ var exercise = "JavaScript";
 var mess = `Chào ${user}, Đang học ${exercise} tại đây`;
 console.log(mess);
 ```
+BT:
+
+Cho trước một biến email, hãy gán giá trị cho nó là một chuỗi.
+```javascript
+const email = "hello everyone";
+```
+
+# Làm việc với chuỗi
+
+1. Length
+2. Find index
+3. Cut string
+4. Replace
+5. Convert to upper case
+6. Convert to lower case 
+7. Trim
+8. Split
+9. Get a character by index
+
+## 1.Length(Độ dài chuỗi)
+
+-Trả về số lượng ký tự trong chuỗi
+```javascript
+    var myString ="Hoc Tap!";
+    console.log(myString.length) //8
+```
+## 2.Find Index(Tìm vị trí)
+
+-
+
+
+
+
 
 
 
