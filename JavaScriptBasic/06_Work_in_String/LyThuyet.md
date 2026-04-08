@@ -45,7 +45,30 @@ console.log(typeof name); //Outp: "String"
 ```
 ## 4.Một số case sử dụng Backslash(\)
 
-Backslash(Dấu gạch chéo ngược) 
+Backslash(Dấu gạch chéo ngược)
+
+- Chèn dấu nháy vào chuỗi cùng loại:
+
+Ví dụ: 'It\'s a sunny day'(không có  `\`,JS sẽ hiểu là chuỗi kết thúc ở chữ t).
+
+- Dòng mới: `\n`(Newline).
+
+- Tab: `\t`.
+
+- Chèn chính dấu blackslash: `\\`.
+
+## 5.Xem độ dài chuỗi.
+
+- Dùng `.length`(Lưu ý: length đếm cả khoảng trắng và ký tự đặc biệt).
+```javascript
+var text = "Hello!";
+console.log(text.length); //outp: 6
+```
+
+## 6.Chú ý độ dài khi viết code.
+
+
+
 
 
 
