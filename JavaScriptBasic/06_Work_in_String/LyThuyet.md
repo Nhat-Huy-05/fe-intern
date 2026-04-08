@@ -109,6 +109,8 @@ const email = "hello everyone";
 ## 1.Length(Độ dài chuỗi)
 
 - Trả về số lượng ký tự trong chuỗi
+
+- Dùng `.length`.
 ```javascript
     var myString ="Hoc Tap!";
     console.log(myString.length) //8
@@ -127,7 +129,7 @@ const email = "hello everyone";
     //trường hợp trùng chữ sẽ ghi('chuỗi', vị trí) (tức là sẽ bắt đầu ở vị trí đó để đi tìm)
                         //learn("learn", 4)
 ```   
-## 3.Cut String(Cắt chuỗi).
+## 3.Cut String(Cắt chuỗi)
 
 - Trích xuất 1 đoạn chuỗi từ `vị Trí A` tới `vị trí B`.
 
@@ -136,7 +138,7 @@ const email = "hello everyone";
     var myString = "Hoc Tap Code!";
     console.log(myString.slice(4, 7));//Tap  
 ```
-## 4.Replace(ghi đè).
+## 4.Replace(ghi đè)
 
 - Thay thế 1 cụm từ bằng 1 cụm từ khác.
 
@@ -150,6 +152,54 @@ console.log(newString.replace("C++", "Java"));
 ## 5. Convert to Upper Case(Viết hoa)
 
 - Chuyển tất cả ký tự sang chữ in hoa.
+
+- Dùng `.toUpperCase()`.
+```javascript
+var newString = "Học tập tại git";
+console.log(newString.toUpperCase());
+//HỌC TẬP TẠI GIT
+```
+## 6.Convert to Lower Case(Viết thường)
+
+- Chuyển tất cả ký tự sang chữ in thường.
+
+- Dùng `.toLowerCase()`.
+```javascript
+var newString = "HELLO WORLD";
+console.log(newString.toLowerCase());
+//hello world
+```
+## 7.Trim(Cắt khoảng trắng)
+
+- Xoá khoảng trắng dư thừa ở 2 đầu chuỗi(đầu, cuối)
+
+- Dùng `.trim()`.
+```javascript
+var clean = "  Hi  ";
+console.log(clean.trim());//"Hi" 
+```
+## 8.Split(Tách chuỗi)
+
+- Cắt chuỗi thành 1 mảng dựa trên ký tự phân tách.
+
+- Dùng `.split()`.
+```javascript
+var array ="Cơm, Cháo, Gạo, Măng";
+console.log(array.split());
+//['Cơm, Cháo, Gạo, Măng']
+```
+## 9.Get character by Index(Lấy ký tự).
+
+- Lấy ra 1 ký tự duy nhất tại vị trí chỉ định.
+
+- Dùng `"Chuỗi"[vị trí] `.
+```javascript
+var char = "Hello";
+console.log("Hello"[2]);
+//l
+```
+
+
 
 
 

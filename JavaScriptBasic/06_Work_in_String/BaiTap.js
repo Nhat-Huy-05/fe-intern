@@ -1,2 +1,3 @@
-var newString = "Học C++";
-console.log(newString.replace("C++", "Java"));
+var char = "Hello";
+console.log("Hello"[2]);
+//l
