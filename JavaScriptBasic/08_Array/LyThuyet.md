@@ -9,6 +9,9 @@
 ## Tạo mảng
 
 Mảng(Array): Giúp lưu trữ danh sách các giá trị trong 1 biến duy nhất.
+
+Khi lưu 1 item trong mảng sẽ được gọi là `một phần tử trong mảng`.
+
 - Cách tạo:
 
 +, Cách 1: Sử dụng ngoặc vuông `[]`.
@@ -17,6 +20,12 @@ Mảng(Array): Giúp lưu trữ danh sách các giá trị trong 1 biến duy nh
 ```javascript
 //Cách 1: []
 var code = ["JS", "PHP", "C++"]; 
+
+var code = [
+        "JS",
+        "PHP",
+        "C++"
+];
 
 //Cách 2:
 var code = new Array("JS", "PHP", "C++"); 
