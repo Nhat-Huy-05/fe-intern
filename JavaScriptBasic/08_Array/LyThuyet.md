@@ -6,7 +6,7 @@
 2. Truy xuất mảng
 - Độ dài mảng
 - Lấy phần tử theo index
-## Tạo mảng
+## 1.Tạo mảng
 
 Mảng(Array): Giúp lưu trữ danh sách các giá trị trong 1 biến duy nhất.
 
@@ -36,3 +36,19 @@ var code = new Array("JS", "PHP", "C++");
 Sử dụng `Cách 1[]`: tốc độ thực thi nhanh,tránh nhầm lẫn(ví dụ: new Array(5) sẽ tạo ra 1 mảng có 5 phần tử trống chứ k phải mảng có số 5).
 
 - Kiểm tra Data Type:
+
+Dùng `typeof`, sẽ trả về là `object`.
+```javascript
+var code = ["JS", "PHP"];
+console.log(typeof code); //"object"
+
+//Kiểm tra mảng chính xác:
+console.log(Array.isArray(code)); //true(true là mảng)
+```
+## 2.Truy xuất mảng
+
+- Độ dài mảng (Length): sử dụng `.length`.
+```javascript
+var code = ["JS", "PHP", "Ruby"];
+console.log(code.length);
+```
