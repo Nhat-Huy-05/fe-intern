@@ -52,3 +52,64 @@ console.log(Array.isArray(code)); //true(true là mảng)
 var code = ["JS", "PHP", "Ruby"];
 console.log(code.length);
 ```
+- Lấy phần tử theo index
+
+Mảng trong JS bắt đầu đếm từ số 0
+```javascript
+var languages = ['JavaScript', 'PHP', 'Ruby'];
+
+// Lấy phần tử đầu tiên
+console.log(languages[0]); // "JavaScript"
+
+// Lấy phần tử thứ hai
+console.log(languages[1]); // "PHP"
+
+// Nếu lấy index không tồn tại
+console.log(languages[10]); // undefined
+```
+# Tổng kết:
+```javascript
+/* MẢNG TRONG JAVASCRIPT
+*/
+
+// 1. Tạo mảng
+var fruits = ['Táo', 'Chuối', 'Cam']; // Tạo mảng bằng cách tối ưu nhất
+
+// Kiểm tra kiểu dữ liệu
+if (Array.isArray(fruits)) {
+    console.log('Đây là một mảng!');
+}
+
+// 2. Truy xuất mảng
+console.log('Số lượng trái cây:', fruits.length); // 3
+
+// Truy cập phần tử cuối cùng của mảng một cách linh hoạt
+var lastIndex = fruits.length - 1;
+console.log('Trái cây cuối cùng là:', fruits[lastIndex]); // "Cam"
+```
+# Làm việc với mảng (Work in Array)
+
+1. To string
+2. Join
+3. Pop
+4. Push
+5. Shift
+6. Unshit
+7. Splicing
+8. Concat
+9. Slicing
+## 1.To String
+- Chuyển mảng thành chuỗi, các phần tử ngăn cách bởi dấu phẩy.
+```javascript
+var food = ["Apple","Melon","Banana"];
+console.log(food.toString());
+```
+## 2.Join
+- Tương tự toSTring nhưng tự chọn ký tự ngăn cách.
+```javascript
+var food = ["Apple","Melon","Banana"];
+console.log(food.join(' - '));
+```
+## 3.Pop
+- 
+
