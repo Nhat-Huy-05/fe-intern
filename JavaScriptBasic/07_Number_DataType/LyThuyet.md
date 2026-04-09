@@ -100,4 +100,52 @@ Ví dụ: `25 == new Number(25)` là `true` nhưng `25 === new Number(25)` lại
 |25 | 25 | number |
 |new Number(25) | 25 | object |
 
+- Kiểm tra Data Type: `typeof`
+```javascript
+console.log(typeof age); // "number"
+console.log(typeof pi);  // "number"
+
+// Lưu ý về giá trị đặc biệt NaN (Not a Number)
+var invalid = 10 / "Apple"; 
+console.log(invalid);        // NaN
+console.log(typeof invalid); // Vẫn là "number"!
+```
+Giải thích về `NaN`: Là 1 giá trị số k hợp lệ, kết quả của 1 phép toán số học thất bại.
+
+khi lấy 10 / "Apple", JS cố gắng thực hiện phép chia.
+
+"Apple" k thể chuyển thành số để chia được.
+
+JS trả về 1 giá trị đặc biệt (NAN).
+
+## 2.Làm việc với number
+
+- To string (`toString()`)
+
+Phương thức này chuyển đổi số thành 1 chuỗi(string). Dùng khi muốn nối chuỗi hoặc sử dụng các hàm của string.
+```javascript
+var myNumber = 100;
+var myString = myNumber.toString();
+
+console.log(myString); // "100"
+console.log(typeof my String); //"String"
+```
+- To Fixed (`toFixed()`)
+
+Dùng để làm tròn số thập phân.
+
+ +, Nếu phần thập phân tiếp theo >= 5, nó sẽ làm tròn.
+
+ +, Kết quả trả về là 1 chuỗi(string).
+ ```javascript
+ var price = 12,5678;
+ 
+ console.log(price.toFixed()); //"13" Làm tròn thành số nguyên.
+ console.log(price.toFixed(1)); //"12.6"
+ console.log(price.toFixed(2)); //"12.57"
+
+ var money = 10.5;
+ console.log(money.toFixed(2)); //"10.50"
+ ```
+
 
