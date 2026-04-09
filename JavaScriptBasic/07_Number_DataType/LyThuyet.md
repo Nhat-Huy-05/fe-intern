@@ -75,9 +75,9 @@ numberObject.toFixed(6); // '1234.567890'
 
 - Các cách tạo:
 
-+, Khai báo trực tiếp giá trị
++, **Cách 1**: Khai báo trực tiếp giá trị (Literal)
 
-+, Sử dụng từ khoá `new Number()`: khởi tạo dưới dạng 1 đối tượng.
++, **Cách 2**: Sử dụng từ khoá `new Number()`: khởi tạo dưới dạng 1 đối tượng.
 
 Ví dụ:
 ```javascript
@@ -88,5 +88,16 @@ var pi = 3.14;
 // Cách 2: Object (Không khuyến khích)
 var otherNumber = new Number(25);
 ```
+- Dùng cách nào?
+
+Nên dùng Literal (Cách 1):
+
+Vì cách dùng `new Number()` sẽ tạo ra 1 object, làm chậm tốc độ thực thi code, gây ra lỗi khi so sánh = toán tử
+
+Ví dụ: `25 == new Number(25)` là `true` nhưng `25 === new Number(25)` lại là `false`.
+| Biến | Giá trị | Kiểu dữ liệu (Typeof) |
+| :-- | :-- | :-- |
+|25 | 25 | number |
+|new Number(25) | 25 | object |
 
 
