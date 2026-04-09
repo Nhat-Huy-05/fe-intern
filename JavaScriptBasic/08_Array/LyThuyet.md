@@ -98,18 +98,52 @@ console.log('Trái cây cuối cùng là:', fruits[lastIndex]); // "Cam"
 7. Splicing
 8. Concat
 9. Slicing
-## 1.To String
-- Chuyển mảng thành chuỗi, các phần tử ngăn cách bởi dấu phẩy.
-```javascript
-var food = ["Apple","Melon","Banana"];
-console.log(food.toString());
-```
-## 2.Join
-- Tương tự toSTring nhưng tự chọn ký tự ngăn cách.
-```javascript
-var food = ["Apple","Melon","Banana"];
-console.log(food.join(' - '));
-```
-## 3.Pop
-- 
+## 1.To string & 2. Join (Chuyển mảng thành chuỗi)
+- `toString()`: Chuyển mảng thành chuỗi, các phần tử ngăn cách bởi dấu phẩy.
 
+- `join()`: Tương tự toString có thể tự chọn ký tự ngăn cách.
+```javascript
+var languages = ['JavaScript', 'PHP', 'Ruby'];
+
+console.log(languages.toString()); // "JavaScript,PHP,Ruby"
+console.log(languages.join(' - ')); // "JavaScript - PHP - Ruby"
+```
+## 3.Pop & 4. Push (Làm việc với cuối mảng)
+- `Pop`: `Xóa` phần tử `cuối mảng` và trả về chính phần tử đó.
+
+- `Push`: `Thêm` một hoặc nhiều phần tử vào `cuối mảng` và trả về `độ dài mới` của mảng.
+```javascript
+var languages = ['JavaScript', 'PHP'];
+
+console.log(languages.pop());  // "PHP" (lấy ra phần tử cuối)
+console.log(languages);        // ["JavaScript"]
+
+languages.push('Java', 'Dart'); 
+console.log(languages);        // ["JavaScript", "Java", "Dart"]
+```
+## 5.Shift & 6.Unshift (Làm việc với đầu mảng)
+- `Shift`: `Xóa` phần tử `đầu mảng` và trả về phần tử đó (giống pop nhưng ở `đầu`).
+
+- `Unshift`: `Thêm` một hoặc nhiều phần tử vào `đầu mảng` (giống push nhưng ở `đầu`).
+```javascript
+var languages = ['JavaScript', 'PHP'];
+
+console.log(languages.shift()); // "JavaScript"
+languages.unshift('Python');    
+console.log(languages);         // ["Python", "PHP"]
+```
+## 7.Splicing (Cắt, Chèn, Xoá đa năng)
+
+- Cú pháp `splice(vị trí bắt đầu, số lượng cần xoá, các ptu thêm vào)`.
+```javascript
+var languages = ['JavaScript', 'PHP', 'Ruby'];
+
+// Xóa: Bắt đầu từ index 1, xóa 1 phần tử
+languages.splice(1, 1); 
+console.log(languages); // ["JavaScript", "Ruby"]
+
+// Chèn: Bắt đầu từ index 1, không xóa cái nào, chèn thêm 'Dart'
+//
+languages.splice(1, 0, 'Dart');
+console.log(languages); // ["JavaScript", "Dart", "Ruby"]
+```
