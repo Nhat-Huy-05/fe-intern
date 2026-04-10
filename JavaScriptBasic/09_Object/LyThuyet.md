@@ -133,3 +133,20 @@ var day = date.getDate();
 console.log(`${day}/${month}/${year}`);
 ```
 # Đối tượng math
+## 1.`Math.PI` (Số Pi)
+- Trả về giá trị xấp xỉ số pi.
+```javascript
+console.log(Math.PI); /3,14....
+```
+## 2.`Math.round()` (Làm tròn số)
+- Làm tròn số nguyên gần nhất ( từ `.5 trở lên` là làm tròn.)
+```javascript
+console.log(Math.round(4.4));//4
+console.log(Math.round(4.5)); //5
+```
+## 3.`Math.abs()` (Giá trị tuyệt đối)
+- Biến mọi số thành số dương ( `bỏ dấu âm`)
+```javascript
+console.log(Math.abs(-10)); //10
+```
+

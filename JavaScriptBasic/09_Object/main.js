@@ -50,11 +50,25 @@ console.log(student.firstName);  // 'Long'
 console.log(student.lastName);  // 'Bui'
 console.log(student.getFullName());  // 'Long Bui'
 
-
+//Bài tập Date:
+//In ngày tháng năm hiện tại.
 var date = new Date();
 var year = date.getFullYear();
 var month = date.getMonth() + 1;
 var day = date.getDate();
 console.log(`${day}/${month}/${year}`);
 
+
+/*hãy tạo hàm getNextYear, 
+hàm này sẽ trả về năm kế tiếp. Ví dụ, năm nay là 2022, hàm sẽ trả về 2023 là kiểu số.
+ */
+function getNextYear(){
+    var date = new Date();
+    var year = date.getFullYear();
+
+    return year + 1;
+}
+
+//Các ví dụ Math:
+console.log(Math.PI);
 
