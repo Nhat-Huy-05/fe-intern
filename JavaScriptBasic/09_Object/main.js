@@ -1,16 +1,14 @@
-const car = {
-  brand: "Toyota",
-  model: "Camry",
-  startEngine: function() {
-    console.log(`Động cơ của xe ${this.brand} ${this.model} đã khởi động!`);
-  }
-};
+function user(firstName, lastName, age){
+ this.firstName =  firstName;
+ this.lastName = lastName;
+ this.age = age;
+ 
+ this.getFullName = function(){
+    return this.firstName +' '+ this.lastName;
+ };
+}
 
-car.startEngine(); // Output: Động cơ của xe Toyota Camry đã khởi động!
+var user1 = new user("Nguyễn","Văn",19);
+var user2 = new user("Tom","Jerry",30);
 
-var user = {
-    id : 111,
-    role: 'Admin',
-    year: 2000
-};
-console.log(Object.entries(user));
+console.log(user1.getFullName());
