@@ -154,5 +154,27 @@ console.log(Math.abs(-10)); //10
 ```javascript
 console.log(Math.ceil(4.1));//5
 ```
-## 5.
+## 5.`Math.floor()` (Làm tròn xuống)
+- Luôn làm tròn xuống số nguyên phía dưới, vứt phần thập phân.
+```javascript
+console.log(Math.floor(4.9)); //4
+```
+## 6.`Math.random()` (Số ngẫu nhiên)
+- Trả về 1 số thập phân ngẫu nhiên từ 0 đến sát 1 (`không bao giờ bằng 1`).
+```javascript
+console.log(Math.random()); //VD: 0.8234
+```
+## 7.`Math.min()` và `Math.max()`
+- `min`: Tìm số nhỏ nhất trong dãy.
+- `max`: Tìm số lớn nhất trong dãy.
+```javascript
+console.log(Math.min(10, 20, 5, -1));// -1
+console.log(Math.max(10, 20, 5, -1));// 20
+```
 
+**Lưu ý**:
+- Kết hợp `random` và `floor`: Lấy số ngẫu nhiên.
+- Ví dụ: Lấy số ngẫu nhiên từ 0 đến 9.
+```javascript
+var randomInt = Math.floor(Math.random() * 10);
+```
