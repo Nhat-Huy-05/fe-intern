@@ -72,3 +72,13 @@ function getNextYear(){
 //Các ví dụ Math:
 console.log(Math.PI);
 
+//BT:
+ /*tạo hàm getRandomItem, 
+ hàm này nhận 1 tham số là mảng và sẽ trả về ngẫu nhiên 1 phần tử của mảng. */
+ function getRandomItem(array){
+    var randomIndex = Math.floor(Math.random() * array.length);
+
+    return array[randomIndex];
+}
+console.log(getRandomItem);
+
