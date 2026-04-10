@@ -149,4 +149,10 @@ console.log(Math.round(4.5)); //5
 ```javascript
 console.log(Math.abs(-10)); //10
 ```
+## 4.`Math.ceil()` (Làm tròn lên)
+- Luôn làm tròn lên số nguyên, dù `phần thập phân rất nhỏ`
+```javascript
+console.log(Math.ceil(4.1));//5
+```
+## 5.
 
