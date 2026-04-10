@@ -49,8 +49,8 @@ function tenHam() {
 Ví dụ:
 ```javascript
 // 'name' là tham số
-function sayHello(name) {
-  console.log("Hello, " + name);
+function sayHello(1) {
+  console.log("Hello, " + 1);
 }
 
 // "Alice" và "Bob" là đối số
@@ -335,8 +335,14 @@ var expressionFunction = function(){
 
 }
 ```
+- Kiểu lambda:
+```javascript
+const add = (a, b) => {
+    return a + b;
+};
 
-
+console.log(add(5, 3));
+```
 
 
 
