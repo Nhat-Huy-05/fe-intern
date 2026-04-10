@@ -132,3 +132,4 @@ var month = date.getMonth() + 1;
 var day = date.getDate();
 console.log(`${day}/${month}/${year}`);
 ```
+# Đối tượng math
