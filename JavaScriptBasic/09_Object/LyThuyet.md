@@ -101,4 +101,34 @@ user.prototype.nationality = "Việt Nam";
 console.log(user1.nationality); //VN
 console.log(user2.nationality); //VN
 ```
+# Đối tượng Date
 
+- Làm việc với các giá trị thời gian.
+```javascript
+var date = new Date();
+console.log(date); // trả về thời gian hiện tại
+```
+- Các phương thức Get(lấy thông tin)
+
+| Phương thức | Ý nghĩa | Giá trị trả về |
+| :- | :- | :- |
+| getFullyear() | Lấy năm | 2026 |
+| getMonth() | Lấy tháng | 0 - 11 (Tháng 1 là 0) |
+| getDate() | Lấy ngày trong tháng | 1 - 31 |
+| getDay() | Lấy thứ trong tuần | 0 - 6(Chủ nhật là 0) |
+| getHours() | Lấy giờ | 0 - 23 |
+| getTime() | Lấy timestamp | Tính bằng miligiay |
+**Lưu ý**: Tháng trong JS bắt đầu từ 0(T1) đến 11(T12). Phải cộng thêm 1
+VD: getMonth() + 1;
+## 1.Các phương thức set
+- `date.setFullYear(2027)`;
+- `date.setMonth(5)`; //Đổi sang tháng 6
+- `date.setDate(25)`;
+## Ví dụ thực tế: (Hiển thị ngày/tháng/năm hiện tại)
+```javascript
+var date = new Date();
+var year = date.getFullYear();
+var month = date.getMonth() + 1;
+var day = date.getDate();
+console.log(`${day}/${month}/${year}`);
+```
