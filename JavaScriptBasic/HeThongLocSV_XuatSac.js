@@ -2,6 +2,7 @@
 //Hệ thống quản lý danh sách sinh viên
 
 //1.Array chứa các Ob(Mỗi ob là 1 sinh viên)
+
 //Kết hợp Array(tạo ra nhiều thực thể cùng loại),Ob
 var students = [
     {id: 100, name: "Nhat Huy", score: 8.0},
@@ -21,7 +22,7 @@ function reviewStudent(studentList){
 
         //4.Sử dụng number để lọc
         if (student.score >= 8.0){
-            studentXuatSac.push(cleanName - "Score": student.score);
+            studentXuatSac.push(cleanName + " Điểm: " + student.score);
         }
     }
    return studentXuatSac; 
