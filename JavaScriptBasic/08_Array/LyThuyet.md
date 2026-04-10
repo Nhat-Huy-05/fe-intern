@@ -147,3 +147,39 @@ console.log(languages); // ["JavaScript", "Ruby"]
 languages.splice(1, 0, 'Dart');
 console.log(languages); // ["JavaScript", "Dart", "Ruby"]
 ```
+## 8.Concat (Nối mảng)
+
+- Dùng để `hợp nhất` hoặc nhiều mảng với nhau.
+```javascript
+var food = ["Táo","Chuỗi","Cam"," Bưởi"];
+var code = ["C++","PHP","JS","HTML"];
+var arr = food.concat(code);
+console.log(arr);
+```
+## 9.Slicing(Cắt mảng)
+
+- Dùng để lấy ra `một phần` của mảng mà `không làm thay đổi` mảng gốc.
+
+- Cú pháp: `slice(start, end)`.
+```javascript
+var food = ["Táo","Chuối","Cam"," Bưởi"];
+var food1 = food.slice(1,3);
+console.log(food1);
+//Outp: "Chuối","Cam".
+```
+
+**Lưu ý**:
+```javascript
+//            0         1        2        3        4
+var cars = ['Toyota', 'BMW', 'Audi', 'Honda', 'Kia'];
+
+var result = cars.slice(1, 3); 
+
+console.log(result); // Kết quả: ['BMW', 'Audi']
+```
+
+Giải thích:
+- Nó bắt đầu từ index 1 ('BMW').
+- Nó lấy tiếp index 2 ('Audi').
+- Nó dừng lại trước index 3 (Không lấy 'Honda').
+- SỐ lượng phần tử lấy được sẽ bằng `end - start` (3 - 1 = 2 phần tử).
