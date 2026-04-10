@@ -165,7 +165,23 @@ console.log(arr);
 var food = ["Táo","Chuối","Cam"," Bưởi"];
 var food1 = food.slice(1,3);
 console.log(food1);
-//Outp: "Chuối","Cam".
+//Outp: "Chuối","Cam" (nó chỉ tới cam chứ k lấy bưởi).
+
+var languages = [
+    'JS',
+    'PHP',
+    'Ruby'
+];
+console.log(languages.slice(0));
+//Outp: 'JS','PHP','Ruby'
+
+var languages = [
+    'JS',
+    'PHP',
+    'Ruby'
+];
+console.log(languages.slice(1));
+//Outp: 'PHP','Ruby'
 ```
 
 **Lưu ý**:
