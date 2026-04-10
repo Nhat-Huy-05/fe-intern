@@ -84,7 +84,7 @@ var user ="Học viên";
 var exercise = "JavaScript";
 //Cách cũ: "Chào " + user + ", bạn đang học " + exercise
 //Cách ES6:
-var mess = `Chào ${user}, Đang học ${exercise} tại đây`;
+var mess = `Chào, Đang học ${exercise} tại đây`;
 console.log(mess);
 ```
 BT:
@@ -177,7 +177,7 @@ console.log(newString.toLowerCase());
 
 - Dùng `.trim()`.
 ```javascript
-var clean = "  Hi  ";
+var clean = "  Hi   ";
 console.log(clean.trim());//"Hi" 
 ```
 ## 8.Split(Tách chuỗi)
@@ -191,7 +191,7 @@ console.log(array.split());
 //['Cơm, Cháo, Gạo, Măng']
 
 var array ="JavaScript";
-console.log(array.split(""));
+console.log(array.split("a"));
 //['J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't']
 ```
 ## 9.Get character by Index(Lấy ký tự).
@@ -215,7 +215,7 @@ Gợi ý: Bạn có thể sử dụng phương thức split đã được học 
 var coursesStr = 'HTML & CSS, JavaScript, ReactJS';
  
 function strToArray(str) {
-    return str.split(", ");//", " nhằm không dính khoảng trắng thừa.
+    return str.split(",");//", " nhằm không dính khoảng trắng thừa.
 }
 console.log(strToArray(coursesStr)) 
 

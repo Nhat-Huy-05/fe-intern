@@ -26,3 +26,8 @@ console.log(string.toUpperCase());
 //Bai6: tách các từ trong câu thành 1 mảng.
 var string = "Welcome to my Project";
 console.log(string.split(" "));
+
+
+function sayHello(name) {
+  console.log("Hello, " + name);
+}
