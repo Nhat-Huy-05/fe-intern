@@ -53,3 +53,5 @@ console.log("Danh sach sinh vien xuat sac: ", result);
 ```
 - Gọi hàm và truyền mảng students ban đầu vào. Kết quả trả về được lưu vào biến result.
 - In kq ra màn hình console.
+
+Hello
