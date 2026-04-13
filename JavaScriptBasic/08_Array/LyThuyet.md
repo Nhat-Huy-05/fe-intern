@@ -87,7 +87,7 @@ console.log('Số lượng trái cây:', fruits.length); // 3
 var lastIndex = fruits.length - 1;
 console.log('Trái cây cuối cùng là:', fruits[lastIndex]); // "Cam"
 ```
-# Làm việc với mảng (Work in Array)
+# Làm việc với mảng (Work in Array) - PHẦN 1
 
 1. To string
 2. Join
@@ -199,3 +199,19 @@ Giải thích:
 - Nó lấy tiếp index 2 ('Audi').
 - Nó dừng lại trước index 3 (Không lấy 'Honda').
 - SỐ lượng phần tử lấy được sẽ bằng `end - start` (3 - 1 = 2 phần tử).
+
+# Làm việc với mảng - PHẦN 2
+
+1. forEach()
+2. every()
+3. some()
+4. find()
+5. filter()
+6. map()
+7. reduce()
+## 1.forEach()
+- Dùng để duyệt qua từng phần tử của mảng và thực hiện 1 hành động nào đó. Nó k trả về mảng mới.
+- Ví dụ:
+```javascript
+
+```
