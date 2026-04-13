@@ -46,6 +46,17 @@ Giải thích:
 
 ![alt text](VonglapFor.png)
 
+**Lưu ý**:
+```javascript
+for (var i = 100; i > 0; i--){
+    console.log(i); // in ra từ 100 tới 1, ngược lại so với i++
+}
+
+for (var i = 0; i <= 100; i+= 5){ //0,5,10,... in ra cộng 5 giá trị mỗi lần lặp.
+    console.log(i);
+}
+```
+
 ## 2.Vòng lặp `for...in` - Lặp qua key của đối tượng.
 
 - Dùng để duyệt qua các thuộc tính(key) của 1 đối tượng(object)
@@ -131,6 +142,7 @@ while(i < myArray.length) {
 - Luôn đảm bảo điều kiện trong `while` sẽ trở thành `false` tại 1 thời điểm nào đó.
 ## 5. `Do..While` - Lặp ít nhất 1 lần, sau đó lặp khi điều kiện đúng.
 - Luôn thực hiện khối lệnh ít nhất 1 lần trước khi kiểm tra điều kiện.
+- Luôn chạy 1 lần dù điều kiện đúng hay sai.
 - Cú pháp:
 ```
 do {
@@ -151,3 +163,46 @@ alert("Đăng nhập thành công!")
 +,B2: Nếu người dùng nhập sai(khác 123456), điều kiện `while` là đúng, vòng lặp quay lại bắt nhập tiếp.
 
 +,B3:Nếu nhập đúng, điều kiện thành sai, vòng lặp dừng lại.
+## 6. `break` và `continue` trong Loop
+- Break:
+```javascript
+for (let i = 1; i <= 20; i++) {
+    if (i % 7 === 0) {
+        console.log("Tìm thấy số chia hết cho 7 đầu tiên là: " + i);
+        break; // Thoát khỏi vòng lặp ngay lập tức
+    }
+    console.log("Đang kiểm tra số: " + i);
+}
+// Kết quả: Kiểm tra từ 1 đến 6, gặp số 7 in ra thông báo và DỪNG LẠI.
+```
+- Continue: Không làm dừng vòng lặp, nó sẽ bỏ qua các câu lệnh còn lại trong lần lặp hiện tại và nhảy thẳng sang lần lặp kế tiếp.
+- Ví dụ: In ra các số từ 1 đến 5 nhưng trừ 3.
+```javascript
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) {
+        continue; // Bỏ qua đoạn code phía dưới, nhảy sang i = 4 luôn
+    }
+    console.log("Số: " + i);
+}
+/* Kết quả: 
+Số: 1
+Số: 2
+(Số 3 bị bỏ qua)
+Số: 4
+Số: 5
+*/
+```
+## 7.Vòng lặp chồng vòng lặp.
+```javascript
+//Vẽ hình tam giác vuông bằng các dấu sao
+var n = 5;
+for (var i = 1; i <= n ; i++){
+    //vòng lặp cha: quản lý số hàng( 1 đến 5)
+    var row = "";
+    for(var j = 1; j <= i; j++){
+    //vòng lặp con: quản lý số dấu sao trên mỗi hàng.
+    row += "* ";
+    }
+    console.log(row);
+}
+```

@@ -103,3 +103,16 @@ do {
 } while (password !== "123456");
 
 alert("Đăng nhập thành công!");
+
+//vd về nested loop
+//Vẽ hình tam giác vuông bằng các dấu sao
+var n = 5;
+for (var i = 1; i <= n ; i++){
+    //vòng lặp cha: quản lý số hàng( 1 đến 5)
+    var row = "";
+    for(var j = 1; j <= i; j++){
+    //vòng lặp con: quản lý số dấu sao trên mỗi hàng.
+    row += "* ";
+    }
+    console.log(row);
+}
