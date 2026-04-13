@@ -31,3 +31,30 @@ function getRandNumbers(min, max, length){
     }
     return result;
 }
+
+//BT2:
+/*Cho trước mảng numbers, hãy viết hàm getTotal trả về tổng giá trị các phần tử của mảng.
+ */
+function getTotal(arr) {
+     var numbers = 0;
+    for ( var i = 0;i < arr.length; i++ ){
+        numbers += arr[i];
+    }
+    return numbers;
+}
+
+// Expected results
+// getTotal([1, 2, 3]) // Output: 6
+// getTotal([4, 5, -3]) // Output: 6
+// getTotal([4, 5, 3, 5]) // Output: 17
+
+var arr = [
+    'Javascript',
+    'Java',
+    'C++'
+];
+
+var arrLength = arr.length;
+for(var i=0;i<arr.length;i++) {
+    console.log(arr[i]);
+}
