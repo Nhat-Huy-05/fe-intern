@@ -57,8 +57,29 @@ for (let biến_đại_diện in đối_tượng) {
 ```
 Ví dụ: Giả sử ta có 1 đối tượng sinhVien. Ta muốn in ra toàn bộ thông tin của sv này.
 ```javascript
+var sinhVien = {
+    ten: "Nguyen Van A",
+    tuoi: 20,
+    khoa: "CNTT",
+    diemTB: 8.0
+}; //khai báo 1 object
 
+//vong lap for..in
+for (var thuocTinh in sinhVien){
+    //thuocTinh lần lượt là ten,tuoi,khoa,diemTB
+    //sinhvien[thuocTinh]: dùng để lấy gtri tương ứng với thuộc tính đó.
+    console.log("Tên thuộc tính: " + thuocTinh + " | Giá trị: " + sinhVien[thuocTinh]);
+}
+// Tên thuộc tính: ten | Giá trị: Nguyen Van A
+// Tên thuộc tính: tuoi | Giá trị: 20
+// Tên thuộc tính: khoa | Giá trị: CNTT
+// Tên thuộc tính: diemTB | Giá trị: 8
 ```
+**Khi nào cần dùng**: 
+- Khi cần kiểm tra 1 ob có những dữ liệu gì.
 ## 3. Vòng lặp `for..of` - Lặp qua value của đối tượng.
+- Dùng để duyệt qua các giá trị(value) trong 1 mảng hoặc chuỗi.
+
+
 ## 4. `While` - Lặp khi điều kiện đúng.
 ## 5. `Do..While` - Lặp ít nhất 1 lần, sau đó lặp khi điều kiện đúng.
