@@ -79,7 +79,34 @@ for (var thuocTinh in sinhVien){
 - Khi cần kiểm tra 1 ob có những dữ liệu gì.
 ## 3. Vòng lặp `for..of` - Lặp qua value của đối tượng.
 - Dùng để duyệt qua các giá trị(value) trong 1 mảng hoặc chuỗi.
+- Cú pháp:
+```javascript
+for (var biến_đại_diện of đối_tượng){
+    //khối mã sẽ được thực thi cho mỗi phần tử.
+}
+```
+Ví dụ: Duyệt qua 1 mảng Array
+```javascript
+const fruits = ['Táo', 'Chuối', 'Xoài'];
 
+for (const fruit of fruits) {
+  console.log(fruit); 
+}
+// Kết quả: Táo, Chuối, Xoài
+```
+Ví dụ 2: Duyệt qua 1 chuỗi.
+```javascript
+const message = "Hello";
 
+for (const char of message) {
+  console.log(char);
+}
+// Kết quả: H, e, l, l, o
+```
+**Lưu ý**:
+- **Không dùng cho Object thuần túy**: Vòng lặp for...of sẽ báo lỗi nếu bạn dùng nó để duyệt qua một Object thông thường {a: 1, b: 2}, vì Object không phải là "iterable". Để duyệt Object, bạn hãy dùng for...in.
+- **Giá trị chứ không phải Chỉ số**: Khác với for...in (lấy ra key/index), for...of lấy ra value (giá trị).
+
+- **Có thể dùng break và continue**: Giống như vòng lặp for truyền thống, bạn hoàn toàn có thể dừng vòng lặp nửa chừng bằng break hoặc nhảy qua bước lặp bằng continue (điều mà forEach không làm được).
 ## 4. `While` - Lặp khi điều kiện đúng.
 ## 5. `Do..While` - Lặp ít nhất 1 lần, sau đó lặp khi điều kiện đúng.

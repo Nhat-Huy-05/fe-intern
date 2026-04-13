@@ -56,5 +56,33 @@ var arr = [
 
 var arrLength = arr.length;
 for(var i=0;i<arr.length;i++) {
-    console.log(arr[i]);
+    console.log(arr[i]); //kiểm tra xem mảng có bao nhiêu phần tử.
 }
+
+//BT3
+/*Cho trước mảng orders là danh sách chứa các khóa học, 
+các mặt hàng này được thể hiện dưới dạng object và đều có 1 key là price để thể hiện giá trị của mặt hàng đó.
+Bạn hãy hoàn thành hàm getTotal để tính được tổng giá trị của đơn hàng.
+*/
+var orders = [
+    {
+        name: 'Khóa học HTML - CSS Pro',
+        price: 3000000
+    },
+    {
+        name: 'Khóa học Javascript Pro',
+        price: 2500000
+    },
+    {
+        name: 'Khóa học React Pro',
+        price: 3200000
+    }
+]
+function getTotal(orders){
+    var total = 0;
+    for( var i = 0; i < orders.length;i++){
+        total += orders[i].price;
+    }
+    return total;
+}
+getTotal(orders) // Output: 8700000
