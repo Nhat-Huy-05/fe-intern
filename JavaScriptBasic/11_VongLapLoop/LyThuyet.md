@@ -109,4 +109,45 @@ for (const char of message) {
 
 - **Có thể dùng break và continue**: Giống như vòng lặp for truyền thống, bạn hoàn toàn có thể dừng vòng lặp nửa chừng bằng break hoặc nhảy qua bước lặp bằng continue (điều mà forEach không làm được).
 ## 4. `While` - Lặp khi điều kiện đúng.
+- Thực thi 1 khối lệnh lặp đi lặp lại miễn là đk đầu còn `true`.
+- Cú pháp:
+```javascript
+while (condition) {
+  // Khối mã thực thi (code block)
+  // Thường có bước thay đổi biến điều kiện ở đây
+}
+```
+- Ví dụ:
+```javascript
+var myArray = ['JS','PHP','Ruby'];
+
+var i = 0;
+while(i < myArray.length) {
+    console.log(myArray[i]);
+    i++;
+}
+```
+**Lưu ý**:
+- Luôn đảm bảo điều kiện trong `while` sẽ trở thành `false` tại 1 thời điểm nào đó.
 ## 5. `Do..While` - Lặp ít nhất 1 lần, sau đó lặp khi điều kiện đúng.
+- Luôn thực hiện khối lệnh ít nhất 1 lần trước khi kiểm tra điều kiện.
+- Cú pháp:
+```
+do {
+    // Khối lệnh được thực thi
+} while (điều kiện);
+```
+- Ví dụ:
+```javascript
+let password;
+do {
+    password = prompt("Nhập mật khẩu của bạn:");
+} while (password !== "123456");
+
+alert("Đăng nhập thành công!")
+```
++,B1: Hiện bảng thông báo cho user nhập.
+
++,B2: Nếu người dùng nhập sai(khác 123456), điều kiện `while` là đúng, vòng lặp quay lại bắt nhập tiếp.
+
++,B3:Nếu nhập đúng, điều kiện thành sai, vòng lặp dừng lại.

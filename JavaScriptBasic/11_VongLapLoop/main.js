@@ -86,3 +86,20 @@ function getTotal(orders){
     return total;
 }
 getTotal(orders) // Output: 8700000
+
+
+var myArray = ['JS','PHP','Ruby'];
+
+var i = 0;
+while(i < myArray.length) {
+    console.log(myArray[i]);
+    i++;
+}
+
+//vd về do while
+let password;
+do {
+    password = prompt("Nhập mật khẩu của bạn:");
+} while (password !== "123456");
+
+alert("Đăng nhập thành công!");
