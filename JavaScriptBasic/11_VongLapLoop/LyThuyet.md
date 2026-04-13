@@ -37,6 +37,9 @@ Giải thích:
 - `i++`: Sau mỗi lần chạy xong thân vòng lặp, `tăng i thêm 1 đơn vị`.
 
 - console.log(...): Lệnh thực thi bên trong.
+
+![alt text](image.png)
+
 ## 2.Vòng lặp `for...in`
 
 - Dùng để duyệt qua các thuộc tính(key) của 1 đối tượng(object)
