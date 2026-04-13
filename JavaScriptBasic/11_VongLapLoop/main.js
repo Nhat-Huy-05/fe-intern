@@ -96,7 +96,7 @@ while(i < myArray.length) {
     i++;
 }
 
-//vd về do while
+//vd về do while trong sử dụng mật khẩu.
 let password;
 do {
     password = prompt("Nhập mật khẩu của bạn:");
