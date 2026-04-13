@@ -72,4 +72,13 @@ switch(date){
 }
  ```
  # Toán tử 3 ngôi (ternary operator)
+ - Viết tắt của if else, dùng để `gán giá trị cho biến` hoặc `trả về kết quả` trong hàm 1 cách ngắn gọn.
  
+ - Cú pháp: `condition ? value_if_true: value_if_false`
+
+ Ví dụ:
+ ```javascript
+ var age = 17;
+var canVote = age >=18 ? "Đủ tuổi bầu cử " : "Chưa đủ tuổi";
+console.log(canVote); //chưa đủ t
+ ```

@@ -49,8 +49,25 @@ switch(date){
     case 3:
     case 4:
         console.log('Hôm nay T2,T3,T4');
-        break;
+        break; //lọt vào các case phía dưới cho đến khi gặp từ khoá break mới ngưng.        
     case 5:
         console.log('Hôm nay T5');
         break;
 }
+
+var age = 17;
+var canVote = age >=18 ? "Đủ tuổi bầu cử " : "Chưa đủ tuổi";
+console.log(canVote); //chưa đủ t
+
+//Ví dụ về toán tử 3 ngôi.
+/* cần tạo hàm getCanVoteMessage, hàm này có 1 tham số là age. 
+Trong trường hợp từ 18 tuổi trở lên hàm sẽ trả về
+ Bạn có thể bỏ phiếu, ngược lại hàm trả về Bạn chưa được bỏ phiếu.
+ */
+// Làm bài
+function getCanVoteMessage(age){
+    return age > 18 ? "Bạn có thể bỏ phiếu" : "Bạn chưa được bỏ phiếu";
+}
+
+console.log(getCanVoteMessage(18)) // 'Bạn có thể bỏ phiếu'
+console.log(getCanVoteMessage(15)) // 'Bạn chưa được bỏ phiếu'
