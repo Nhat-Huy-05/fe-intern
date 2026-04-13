@@ -20,3 +20,33 @@ Ví dụ: for i in range(10): (lặp 10 lần).
 +,Cấu trúc: Linh hoạt, điều kiện có thể thay đổi phức tạp bên trong thân vòng lặp.
 
 Ví dụ: while running: ...
+## 1.Vòng lặp `for`
+
+- Dùng khi biết trước số lần muốn lặp.
+```javascript
+//Vd: In ra các số từ 1 đến 5
+for(var i = 1; i <= 5; i ++ ){
+    console.log("Số thứ: "+ i);
+} 
+```
+Giải thích:
+- `var i = 1`: Khởi tạo biến đếm i bắt đầu từ 1.
+
+- `i <= 5`: Điều kiện dừng. Nếu i vẫn nhỏ hơn hoặc bằng 5, vòng lặp tiếp tục chạy.
+
+- `i++`: Sau mỗi lần chạy xong thân vòng lặp, `tăng i thêm 1 đơn vị`.
+
+- console.log(...): Lệnh thực thi bên trong.
+## 2.Vòng lặp `for...in`
+
+- Dùng để duyệt qua các thuộc tính(key) của 1 đối tượng(object)
+- Cú pháp:
+```javascript
+for (let biến_đại_diện in đối_tượng) {
+    // Khối lệnh thực thi
+}
+```
+Ví dụ: Giả sử ta có 1 đối tượng sinhVien. Ta muốn in ra toàn bộ thông tin của sv này.
+```javascript
+
+```

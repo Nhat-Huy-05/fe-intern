@@ -23,3 +23,24 @@ console.log(message); // ❌ Lỗi: message is not defined (vì nó nằm trong 
 - **Comment:**
   - `//`: Comment một dòng.
   - `/* */`: Comment nhiều dòng/khối code.
+
+# So sánh var và const trong JavaScript
+
+Dưới đây là bảng so sánh chi tiết giữa cách khai báo biến bằng `var` và hằng số bằng `const`.
+
+| Đặc điểm | `var` (Variable) | `const` (Constant) |
+| :--- | :--- | :--- |
+| **Gán lại giá trị** | Có thể gán lại thoải mái. | **Không thể** gán lại. |
+| **Phạm vi (Scope)** | **Function scope:** Có tác dụng trong toàn bộ hàm. | **Block scope:** Chỉ có tác dụng trong cặp ngoặc `{ }` chứa nó. |
+| **Hoisting** | Có (được đưa lên đầu nhưng giá trị là `undefined`). | Có, nhưng không thể truy cập trước khi khai báo (Temporal Dead Zone). |
+| **Khai báo lại** | Có thể khai báo trùng tên nhiều lần. | **Lỗi** nếu khai báo trùng tên trong cùng một phạm vi. |
+
+## Giải thích chi tiết bằng Code
+
+### 1. Gán lại giá trị
+```javascript
+var a = 10;
+a = 20; // Hợp lệ
+
+const b = 10;
+b = 20; // LỖI: Assignment to constant variable.
