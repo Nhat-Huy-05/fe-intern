@@ -28,3 +28,17 @@ function run(a) {
 console.log(run(3)) // 1
 console.log(run(5)) // 2
 console.log(run(15)) // 3
+
+
+ let month = 2;
+switch (month) {
+    case 1:
+        console.log("Tháng 1"); 
+    case 2:
+        console.log("Tháng 2"); //Khớp case
+    case 3:
+        console.log("Tháng 3"); //Rơi xuống
+    default:
+        console.log("Không xác định"); //Rơi xuống tiếp.
+} 
+//sẽ in ra Tháng 2, Tháng 3, Không xác định.
