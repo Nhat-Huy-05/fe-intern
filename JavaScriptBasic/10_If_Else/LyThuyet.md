@@ -43,6 +43,7 @@ if (date === 2 ){
 
  Ví dụ thực tế:
  ```javascript
+ //vd1
   let month = 2;
 
 switch (month) {
@@ -56,4 +57,19 @@ switch (month) {
         console.log("Không xác định"); //Rơi xuống tiếp.
 } 
 //sẽ in ra Tháng 2, Tháng 3, Không xác định.
+
+//vd2
+var date = 2;
+switch(date){
+    case 2:
+    case 3:
+    case 4:
+        console.log('Hôm nay T2,T3,T4');
+        break; //lọt vào các case phía dưới cho đến khi gặp từ khoá break mới ngưng.        
+    case 5:
+        console.log('Hôm nay T5');
+        break;
+}
  ```
+ # Toán tử 3 ngôi (ternary operator)
+ 
