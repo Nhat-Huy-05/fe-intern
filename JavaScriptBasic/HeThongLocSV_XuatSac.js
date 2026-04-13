@@ -29,3 +29,4 @@ function reviewStudent(studentList){
 }
 var result = reviewStudent(students);
 console.log("Danh sach sinh vien xuat sac: ",result);
+
