@@ -99,4 +99,31 @@ function getMostFavoriteSport(array){
         return sports.like > 5;
     })
 }
-console.log(getMostFavoriteSport(sports)) 
+console.log(getMostFavoriteSport(sports))
+
+
+/*Các ví dụ về array reduce()
+ 
+*/
+var courses = [
+    {
+        id: 1,
+        name: 'JS',
+        coin: 100
+    },
+    {
+        id: 2,
+        name: 'HTML, CSS',
+        coin: 200
+    },
+    {
+        id: 3,
+        name: 'C++',
+        coin: 400
+    }
+];
+var totalCoin = 0;
+for (var course of courses){
+    totalCoin += course.coin;
+}
+console.log(totalCoin);

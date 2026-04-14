@@ -296,3 +296,21 @@ const prices = [10, 20, 30];
 const total = prices.reduce((sum, p) => sum + p, 0); // Kết quả: 60
 console.log(total);
 ```
+
+# Bài tập thực tế:
+```javascript
+var courses = [
+    {id: 1 , name: "JS Basic", coin: 250},
+    {id: 2 , name: "HML, CSS", coin: 100},
+    {id: 3 , name: "Ruby", coin: 200},
+    {id: 4 , name: "PHP", coin: 400},
+]
+
+var giaTriBanDauCuaHoaDon = 0
+function coinHandler(bienTam, khoaHocValue, khoaHocIndex, troToi_mang_courses){
+    return bienTam + khoaHocValue.coin ;
+}
+var tongTienKhoaHoc = courses.reduce(coinHandler, giaTriBanDauCuaHoaDon); //lần chạy đầu tiên bienTam sẽ lấy giá trị của giaTriBanDauCuaHoaDon
+
+console.log('Tổng tiền các khóa học là : ' + tongTienKhoaHoc); //> Tổng tiền các khóa học là : 950
+```
