@@ -314,3 +314,12 @@ var tongTienKhoaHoc = courses.reduce(coinHandler, giaTriBanDauCuaHoaDon); //lầ
 
 console.log('Tổng tiền các khóa học là : ' + tongTienKhoaHoc); //> Tổng tiền các khóa học là : 950
 ```
+- Nguyên lý hoạt động: Return 1 giá trị được cập nhật sau mỗi lần duyệt qua 1 index.
+
+Giải thích ý nghĩa:
+- Các tham số này có thể đặt tên tùy ý và có thể bỏ đi nếu thấy không cần thiết, ta chỉ cần nhớ chức năng của từng vị trí
+- bienTam : Nơi lưu trữ giá trị của hàm reduce() sau mỗi lần duyệt qua từng index
+- khoaHocValue : giá trị của index hiện tại
+- khoaHocIndex : index hiện tại
+- troToi_mang_courses: tham chiếu (trỏ tới) mảng gốc . Mọi sửa đổi với tham số này đều sẽ ảnh hưởng lên mảng gốc. (Ít được dùng)
+- giaTriBanDauCuaHoaDon: giá trị ban đầu sẽ được gán cho bienTam .
