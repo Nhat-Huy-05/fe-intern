@@ -28,3 +28,7 @@ function getTotalGold(array){
 
 // Expected results:
 console.log(getTotalGold(sports)) // Output: 23
+
+let greeting = "Hi";
+greeting += " there!";
+console.log(greeting);
