@@ -211,7 +211,78 @@ Giải thích:
 7. reduce()
 ## 1.forEach()
 - Dùng để duyệt qua từng phần tử của mảng và thực hiện 1 hành động nào đó. Nó k trả về mảng mới.
+- Cú pháp:
+```
+array.forEach(function(item, index, array){...});
+```
 - Ví dụ:
 ```javascript
-
+var numbers = [1,2,3];
+numbers.forEach(num => console.log(num * 2));
+//KQ: 2,4,6
 ```
+- Không trả về mảng mới(trả về undefined).
+## 2.every()
+- Kiểm tra xem `tất cả phần tử trong mảng` có thoả mãn `1 điều kiện` nào đó không.
+- Cú pháp:
+```
+const allPass = array.every(function(item){return condition; });
+```
+- Ví dụ:
+```javascript
+const ages = [18, 20, 25];
+const isAdult = ages.every(age => age >= 18); // Kết quả: true
+console.log(isAdult);
+```
+- **Lưu ý**: Trả về kiểu Boolean(true/false). `Chỉ cần 1 phần tử sai`, nó sẽ dừng và trả về `false`.
+## 3.some()
+- Kiểm tra xem có `ít nhất 1 phần tử trong mảng` thoả mãn điều kiện không. (khác với every() là ít nhất 1 thôi).
+- Cú pháp:
+```
+const onePass = array.some(function(item) { return condition; });
+```
+- Ví dụ:
+```javascript
+const scores = [4, 5, 9];
+const hasExcellent = scores.some(score => score >= 9); // Kết quả: true
+console.log(hasExcellent);
+```
+- **Ghi chú**: Ngược lại với `every()`. Chỉ cần 1 phần tử đúng, nó sẽ dừng và trả về `true`.
+## 4.find()
+- Tìm và `trả về phần tử đầu tiên thoả mãn điều kiện`.
+- Cú pháp:
+```
+const foundItem = array.find(function(item) { return condition; });
+```
+- Ví dụ:
+```javascript
+const users = [{id: 1, name: 'An'}, {id: 2, name: 'Bình'}];
+const user = users.find(u => u.id === 2); // Kết quả: {id: 2, name: 'Bình'}
+```
+- Nếu không tìm thấy, trả về `undefined`. Chỉ tìm duy nhất 1 phần tử rồi dừng.
+## 5.filter()
+- Lọc ra tất cả các phần tử `thoả mãn điều kiện` và đưa vào `mảng mới`.
+- Cú pháp:
+```
+const newArray = array.filter(function(item) { return condition; });
+```
+- Ví dụ:
+```javascript
+const nums = [1, 2, 3, 4];
+const evens = nums.filter(n => n % 2 === 0); // Kết quả: [2, 4]
+```
+- **Lưu ý**: Trả về mảng mới. Nếu không có phần tử nào thoả mãn, trả về mảng rỗng `[]`.
+## 6.map()
+- Tạo ra 1 mảng mới bằng cách `thực thi 1 hàm` lên từng `phần tử của mảng cũ`.
+- Cú pháp:
+```
+const newArray = array.map(function(item) { return transformation; });
+```
+- Ví dụ:
+```javascript
+const names = ['an', 'binh'];
+const upperNames = names.map(name => name.toUpperCase()); // Kết quả: ['AN', 'BINH']
+```
+- Luôn trả về mảng mới có độ dài bằng với mảng gốc.
+## 7.reduce()
+- Thực thi 1 hàm tích luỹ lên từng phần tử để cuối cùng trả về 1 giá trị duy nhất.

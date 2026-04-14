@@ -75,3 +75,28 @@ var result = getFirstElement(animals);
 
 console.log(result); // Expected: "Monkey"
 console.log(animals); // Expected: ['Monkey', 'Tiger', 'Elephant']
+
+
+//tạo hàm getMostFavoriteSport có 1 tham số (gọi hàm này và luôn truyền đối số là 1 array).
+//Hàm getMostFavoriteSport sẽ trả về các môn thể thao có điểm số yêu thích lớn hơn 5.
+//Gợi ý: Sử dụng phương thức filter.
+const sports = [
+    {
+        name: 'Bóng rổ',
+        like: 6
+    },
+    {
+        name: 'Bơi lội',
+        like: 5
+    },
+    {
+        name: 'Bóng đá',
+        like: 10
+    },
+]
+function getMostFavoriteSport(array){
+    return array.filter(function(sports){
+        return sports.like > 5;
+    })
+}
+console.log(getMostFavoriteSport(sports)) 
