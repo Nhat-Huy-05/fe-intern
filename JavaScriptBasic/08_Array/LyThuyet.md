@@ -285,4 +285,14 @@ const upperNames = names.map(name => name.toUpperCase()); // Kết quả: ['AN',
 ```
 - Luôn trả về mảng mới có độ dài bằng với mảng gốc.
 ## 7.reduce()
-- Thực thi 1 hàm tích luỹ lên từng phần tử để cuối cùng trả về 1 giá trị duy nhất.
+- Thực thi 1 `hàm tích luỹ lên` từng phần tử để cuối cùng trả về `1 giá trị` duy nhất.
+- Cú pháp:
+```
+array.reduce(function(accumulator, currentValue) { ... }, initialValue);
+```
+- Ví dụ:
+```javascript
+const prices = [10, 20, 30];
+const total = prices.reduce((sum, p) => sum + p, 0); // Kết quả: 60
+console.log(total);
+```
