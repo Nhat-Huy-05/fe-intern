@@ -449,6 +449,7 @@ const numbers = [1, 2, 3, 4, 5]
 
 const result = numbers.reduce((total, number) => {
   return total + number
+  //cái biến tích trữ sẽ là giá trị khởi tạo(total = 5, currentValue = 1 nên 5 + 1 = 6, 6 + 2 = 8, 8 + 3 = 11, 11 + 4 = 15, 15 + 5 = 20)
 },5) //giá trị khởi tạo là 5 -> 5 + 15 = 20
 console.log(result)
 
@@ -461,3 +462,51 @@ setTimeout(function() {
 
 console.log("3. Trong lúc chờ thì quét nhà.");
 ```
+- Callback: hàm được gọi lại.
+- Tự code ra 1 phương thức reduce():
+
+```javascript
+Array.prototype.reduce2 = function(callback, result){
+  for(let i = 0; i < this.length;i++){
+    result = callback(result, this[i], i , this)
+  }
+  return result
+}
+const numbers = [1, 2, 3, 4, 5]
+const result = numbers.reduce2((total, number) => {
+  return total + number
+}, 5)
+console.log(result);
+```
+- `Aray.prototype` : gán hàm vào `prototype` của Arr, nghĩa là cho phép tất cả các mảng trong ct có thể sử dụng phương thức `.reduce2()`.
+- `callback`: hàm thực thi logic(ví dụ Cộng dồn)
+- `result`: giá trị khởi tạo(initial value): đang mặc định người dùng sẽ truyền vào
+- `this.length`: this chính là mảng đang gọi phương thức
+- `callback(result, this[i], i, this)`: Tại mỗi vòng lặp, ta gọi hàm `callback` và truyền vào 4 tham số:
+
++, `result`: biến lưu trữ kq tích luỹ từ các bước trước.
+
++, `this[i]`: Ptu hiện tại của mảng
+
++, `i`: chỉ số (index) hiện tại
+
++,`this`: chính cái mảng đó.
+
++, `result = ...`: Quan trọng nhất là dòng này. Kết quả trả về từ hàm callback sẽ được cập nhật ngược lại vào biến result để dùng cho vòng lặp tiếp theo.
+
+- Thực thi ví dụ:
+```javascript
+const numbers = [1, 2, 3, 4, 5]
+const result = numbers.reduce2((total, number) => {
+  return total + number
+}, 5)
+```
+- Ở đây, quá trình tính toán sẽ diễn ra với giá trị khởi đầu = 5;
+
+| Vòng lặp | total(result cũ) | number(this[i]) | Phép tính(callback) |
+| :-- | :-- | :-- | :-- |
+| 1 | 5 | 1 | 5 + 1 |
+| 2 | 6 | 2 | 6 + 2 |
+| 3 | 8 | 3 | 8 + 3 |
+| 4 | 11 | 4 | 11 + 4 |
+| 5 | 15 | 5 | 15 + 5 |
