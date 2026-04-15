@@ -441,3 +441,23 @@ function calculateRating(watchList){
 
 console.log(calculateRating(watchList)); // Output: 8.675
 ```
+
+## Tìm hiểu sâu về reduce() có logic như thế nào?
+```javascript
+//vd1
+const numbers = [1, 2, 3, 4, 5]
+
+const result = numbers.reduce((total, number) => {
+  return total + number
+},5) //giá trị khởi tạo là 5 -> 5 + 15 = 20
+console.log(result)
+
+//vd2
+console.log("1. Đang nấu cơm...");
+
+setTimeout(function() {
+  console.log("2. Cơm chín rồi! (Đây là Callback)");
+}, 2000); // Chờ 2000ms (2 giây)
+
+console.log("3. Trong lúc chờ thì quét nhà.");
+```
