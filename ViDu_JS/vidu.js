@@ -1,15 +1,6 @@
-Array.prototype.map2 = function(callback){
-    var arrayLength = this.length;
-
-    for(let i = 0; i < this.length; ++i){
-        callback(this[i], i);
-    }
+var khoaHoc = ['Toan','Van'];
+khoaHoc.length = 10;
+for(var index in khoaHoc){
+  console.log(index);
+  // thay vì trả về độ dài 10, nó sẽ chỉ lặp qua phần tử thực thôi(0, 1)
 }
-
-var khoaHoc =['Toán',
-                'Văn',
-                'Anh'];
-
- khoaHoc.map2(function(khoaHoc, index){
-    console.log(index, khoaHoc);
- });
