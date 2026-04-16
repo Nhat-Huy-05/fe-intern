@@ -504,9 +504,47 @@ const result = numbers.reduce2((total, number) => {
 - Ở đây, quá trình tính toán sẽ diễn ra với giá trị khởi đầu = 5;
 
 | Vòng lặp | total(result cũ) | number(this[i]) | Phép tính(callback) |
-| :-- | :-- | :-- | :-- |
+| :-- | :-- | :-- | :-- | 
 | 1 | 5 | 1 | 5 + 1 |
 | 2 | 6 | 2 | 6 + 2 |
 | 3 | 8 | 3 | 8 + 3 |
 | 4 | 11 | 4 | 11 + 4 |
 | 5 | 15 | 5 | 15 + 5 |
+
+## 8. includes()
+1. Đối với mảng(array)
+- Dùng để kiểm tra xem 1 mảng hoặc 1 chuỗi có chứa 1 ptu/kí tự nhất định không. Trả về giá trị `Boolean` 
+- Cú pháp:
+```
+array.includes(valueToFind, fromIndex)
+              //gtri muốn tìm, vị trí bắt đầu tìm kiếm(mặc định 0)
+```
+- Ví dụ:
+```javascript
+const hoaQua = ['Táo', 'Chuối', 'Xoài'];
+
+console.log(hoaQua.includes('Chuối')); // true
+console.log(hoaQua.includes('Lê'));    // false
+```
+2. Đối với chuỗi(string)
+- Kiểm tra 1 chuỗi con có nằm trong chuỗi lớn không. Nó phân biệt chữ hoa chữ thường.
+- Cú pháp:
+```
+string.includes(searchString, position)
+```
+- Ví dụ:
+```javascript
+const loiChao = "Chào mừng bạn đến với JavaScript";
+
+console.log(loiChao.includes("Chào"));      // true
+console.log(loiChao.includes("python"));    // false
+console.log(loiChao.includes("Chào", 5));   // false (vì bắt đầu tìm từ vị trí index 5)
+```
+- **Lưu ý**:
+```javascript
+var khoaHoc = ['JS','PHP','Ruby']
+console.log(khoaHoc.includes('JS', -3))
+            //nghĩa là -3 + 3 = 0 -> ptu JS
+```
+
+
