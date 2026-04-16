@@ -1,2 +1,7 @@
-var khoaHoc = ['JS','PHP','Ruby']
-console.log(khoaHoc.includes('JS', -3))
+var khoaHoc =['Toán','Văn', 'Anh'];
+khoaHoc.map(function(khoaHoc){
+    console.log(khoaHoc);
+    //Là hàm
+    //Được truyền qua đối số(khoaHoc)
+    //Được gọi lại
+});
