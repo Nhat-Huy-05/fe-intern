@@ -8,3 +8,4 @@ export function sum(a, b) {
 // 2. Export mặc định (Default Export) - mỗi file chỉ có duy nhất 1 cái này
 const multiply = (a, b) => a * b;
 export default multiply;
+console.log(multiply);
