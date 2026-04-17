@@ -202,3 +202,34 @@ import { MyComponent } from './Component.js';
 ```
 ## Ví dụ cụ thể về Modules.
 - Giả sử ta có 2 file math.js (chứa các hàm tính toán) và main.js(file chính để chạy ứng dụng).
+
+- File 1: `math.js`(File xuất đi) Ta định nghĩa các hàm và cho phép các file khác sử dụng chúng.
+```javascript
+export const PI = 3.14159; 
+
+export function sum(a, b) {
+    return a + b;
+}
+
+// 2. Export mặc định (Default Export) - mỗi file chỉ có duy nhất 1 cái này
+const multiply = (a, b) => a * b;
+export default multiply;
+```
+- File 2: `vidu.js`(file nhập vào và sử dụng) Lấy những gì file `math.js` đã cung cấp và sử dụng.
+```javascript
+// 1. Import Named Export (phải nằm trong dấu { })
+import { PI, sum } from './math.js';
+
+// 2. Import Default Export (không dùng { }, có thể đổi tên tùy ý)
+import nhanHaiSo from './math.js';
+
+console.log(PI);            // Kết quả: 3.14159
+console.log(sum(5, 10));    // Kết quả: 15
+console.log(nhanHaiSo(2, 3)); // Kết quả: 6 (đây chính là hàm multiply)
+```
+
+- import { PI, sum } from './math.js': Chúng ta bóc tách chính xác hai cái tên PI và sum từ file math. Dấu ./ chỉ ra rằng file đó nằm cùng thư mục hiện tại.
+
+- import nhanHaiSo from ...: Vì multiply được export default, nên ở đây mình thích đặt tên là nhanHaiSo cho thuần Việt cũng không sao, JavaScript vẫn hiểu đó là hàm multiply.
+
+- console.log(...): Sử dụng các biến và hàm đã nhập vào như thể chúng được khai báo ngay tại file này.
