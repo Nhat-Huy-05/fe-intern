@@ -2,26 +2,19 @@
 
 ---
 
-## 🎯 PHẦN MỞ ĐẦU (30 giây)
-
-**Lời chào:**
-> "Xin chào mọi người! Hôm nay mình xin phép chia sẻ về những gì mình đã học được trong tuần này. Tuần này mình tập trung chủ yếu vào JavaScript cơ bản và bắt đầu làm quen với ReactJS."
-
 **Giới thiệu tổng quan:**
-> "Cụ thể, mình đã học 4 phần chính:
+ 4 phần chính:
 > 1. Vòng lặp và Đệ quy
 > 2. Các phương thức xử lý mảng
 > 3. Callback function
 > 4. Và bắt đầu tìm hiểu ReactJS cùng ES6+
-> 
-> Giờ mình sẽ đi vào chi tiết từng phần nhé!"
 
 ---
 
 ## 📚 PHẦN 1: VÒNG LẶP VÀ ĐỆ QUY (3-4 phút)
 
 ### Giới thiệu:
-> "Đầu tiên là về Vòng lặp. Vòng lặp là gì? Đơn giản là khi bạn muốn làm một việc lặp đi lặp lại nhiều lần, thay vì viết code nhiều lần, bạn dùng vòng lặp."
+Vòng lặp là gì? Đơn giản là khi bạn muốn làm một việc lặp đi lặp lại nhiều lần, thay vì viết code nhiều lần, bạn dùng vòng lặp."
 
 ### Trình bày các loại vòng lặp:
 
@@ -155,8 +148,7 @@ const sum = [1,2,3].reduce((total, num) => total + num, 0);
 > 
 > Đơn giản là một hàm được truyền vào như đối số của hàm khác, và hàm đó sẽ 'gọi lại' nó."
 
-### Ví dụ đơn giản:
-> "Để dễ hiểu, mình có ví dụ này:"
+### Ví dụ:
 
 ```javascript
 function xinChao(ten, callback) {
@@ -199,10 +191,7 @@ Array.prototype.map2 = function(callback) {
 
 ---
 
-## ⚛️ PHẦN 4: REACTJS VÀ ES6+ (5-6 phút)
-
-### Giới thiệu:
-> "Phần cuối cùng, mình bắt đầu tìm hiểu về ReactJS và các tính năng ES6+ của JavaScript hiện đại."
+## ⚛️ PHẦN 4: REACTJS VÀ ES6+ 
 
 ### SPA vs MPA:
 > "Đầu tiên là phân biệt SPA và MPA.
@@ -297,50 +286,10 @@ import { sum } from './math.js';
 
 ---
 
-## 🎬 PHẦN KẾT THÚC (1 phút)
-
-**Tổng kết:**
-> "Vậy là mình đã chia sẻ xong những gì học được trong tuần này:
-> 
 > 1. ✅ Vòng lặp và Đệ quy - Giúp lặp code hiệu quả
 > 2. ✅ Array Methods - Tối ưu hóa xử lý mảng
 > 3. ✅ Callback - Hiểu cách hàm hoạt động
 > 4. ✅ ReactJS và ES6+ - Bắt đầu với công nghệ hiện đại
-> 
-> Tuần tới mình sẽ tiếp tục đi sâu hơn vào ReactJS!"
-
-**Lời cảm ơn:**
-> "Cảm ơn mọi người đã lắng nghe! Nếu có câu hỏi gì, mọi người cứ thoải mái hỏi nhé!"
-
----
-
-## 💡 MẸO TRÌNH BÀY:
-
-### Trước khi trình bày:
-- ✅ Đọc kỹ kịch bản 2-3 lần
-- ✅ Chuẩn bị demo code nếu có thể
-- ✅ Kiểm tra thời gian (khoảng 15-20 phút)
-
-### Trong khi trình bày:
-- 🎯 Nói chậm, rõ ràng
-- 👀 Nhìn vào người nghe
-- 😊 Tự tin và thoải mái
-- 🖐️ Dùng tay để nhấn mạnh ý quan trọng
-- ⏸️ Dừng lại sau mỗi phần để người nghe tiếp thu
-
-### Khi có câu hỏi:
-- 👂 Lắng nghe kỹ câu hỏi
-- 🤔 Suy nghĩ trước khi trả lời
-- 💬 Trả lời ngắn gọn, dễ hiểu
-- ❓ Nếu không biết, thành thật nói "Mình sẽ tìm hiểu thêm"
-
-### Ngôn ngữ cơ thể:
-- ✅ Đứng thẳng, tự tin
-- ✅ Mỉm cười tự nhiên
-- ✅ Dùng tay để minh họa
-- ❌ Không khoanh tay
-- ❌ Không nhìn xuống đất
-- ❌ Không nói quá nhanh
 
 ---
 
@@ -362,15 +311,3 @@ import { sum } from './math.js';
 > "Ban đầu hơi khó hiểu, nhưng khi nắm được 2 điều: 1) Phải có điểm dừng, 2) Mỗi lần gọi phải đơn giản hơn lần trước, thì sẽ dễ hơn nhiều. Luyện tập nhiều sẽ quen thôi!"
 
 ---
-
-## 🎯 CHECKLIST TRƯỚC KHI TRÌNH BÀY:
-
-- [ ] Đọc kỹ kịch bản
-- [ ] Chuẩn bị ví dụ code
-- [ ] Kiểm tra thời gian
-- [ ] Chuẩn bị trả lời câu hỏi
-- [ ] Thư giãn và tự tin
-- [ ] Uống nước trước khi bắt đầu
-- [ ] Kiểm tra thiết bị (nếu có demo)
-
-**Chúc bạn trình bày thành công! 🎉**
