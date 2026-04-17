@@ -221,6 +221,17 @@ var numbers = [1,2,3];
 numbers.forEach(num => console.log(num * 2));
 //KQ: 2,4,6
 ```
+```javascript
+var number = [1, 2, 3, 4, 5 , 6 , 7 , 8 , 9 , 10];
+number.forEach(num1 => {
+    number.forEach(num => {
+       if (num1 + num === 5){
+        console.log(num1, num)
+       }
+});
+})
+
+```
 - Không trả về mảng mới(trả về undefined).
 ## 2.every()
 - Kiểm tra xem `tất cả phần tử trong mảng` có thoả mãn `1 điều kiện` nào đó không.
