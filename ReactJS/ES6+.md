@@ -90,3 +90,76 @@ const [r, g, b] = colors;
 console.log(r); // Kết quả: Red
 console.log(g); // Kết quả: Green
 ```
+## 8.Rest Parameters
+- Gom các phần còn lại vào 1 mảng.
+- Khi không biết chắc có bao nhiêu tham số truyền vào
+- Cú pháp:
+```javascript
+const logNumbers = (first, ...others) => {
+  console.log(first);  // Số đầu tiên
+  console.log(others); // Một mảng chứa tất cả các số còn lại
+};
+```
+- Ví dụ:
+```javascript
+// ...numbers là Rest Parameters
+function sum(...numbers) {
+    // numbers bây giờ là một mảng: [1, 2, 3, 4, 5]
+    return numbers.reduce((total, num) => total + num, 0);
+}
+
+console.log(sum(1, 2));             // Kết quả: 3
+console.log(sum(1, 2, 3, 4, 5));    // Kết quả: 15
+```
+## 9.Spread
+- Toán tử rải `...`(ngược với Rest)
+- Sao chép mảng hoặc đối tượng. Dùng để cập nhật state mà không làm thay đổi state cũ.
+```javascript
+const oldList = [1, 2];
+const newList = [...oldList, 3, 4]; 
+// Lấy tất cả phần tử của oldList rồi thêm 3, 4 vào. Kết quả: [1, 2, 3, 4]
+```
+- Ví dụ:
+```javascript
+const laptop = ['Dell', 'HP'];
+const mobile = ['iPhone', 'Samsung'];
+
+// Nối mảng theo kiểu cũ: laptop.concat(mobile)
+// Dùng Spread (ES6):
+const devices = [...laptop, ...mobile, 'iPad'];
+
+console.log(devices); 
+// Kết quả: ['Dell', 'HP', 'iPhone', 'Samsung', 'iPad']
+```
+## 10.Enhanced Object Literals
+- Viết đối tượng ngắn gọn
+- giảm bớt code thừa khi viết tên biến trùng tên thuộc tính
+```javascript
+const price = 100;
+consst product = {
+    price,
+    run(){
+        console.log('Running...');
+    }
+}
+console.log(product.run());
+```
+- Ví dụ: Khi tên biến và tên thuộc tính của ob giống hệt nhau, không cần phải viết lặp lại.
+```javascript
+const name = 'ReactJS';
+const price = 500;
+
+// CÁCH CŨ:
+const courseOld = {
+    name: name,
+    price: price
+};
+
+// CÁCH MỚI (ES6):
+const courseNew = {
+    name,
+    price
+};
+
+console.log(courseNew); // Kết quả: { name: 'ReactJS', price: 500 }
+```

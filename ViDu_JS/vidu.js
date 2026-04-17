@@ -1,12 +1,8 @@
-class Car{
-    constructor(brand){
-        this.name = brand;
+const price = 100;
+const product = {
+    price,
+    run(){
+        console.log('Running...');
     }
-show() {
-    return 'I want a car ' + this.name;
-    } 
 }
-const myCar = new Car('Dream')
-console.log(myCar.show())
-
-
+console.log(product.run());
