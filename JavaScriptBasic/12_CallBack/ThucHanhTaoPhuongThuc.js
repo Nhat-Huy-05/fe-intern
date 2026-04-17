@@ -112,3 +112,27 @@ const result = number.myMap(function(number){
     return number * 2;
 })
 console.log(result);
+
+//Tạo phương thức mySome(kiểm tra chỉ cần 1 điều kiện đúng)
+Array.prototype.mySome = function(cb) {
+    for( var index in this ){
+        if(this.hasOwnProperty(index)){
+            if(cb(this[index], Number(index), this)){
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+//Tạo phương thức myEvery (tất  cả phải đúng, 1 sai là sai hết)
+Array.prototype.myEvery = function(cb){
+    for(var index in this){
+        if(this.hasOwnProperty(index)){
+            if(!cb(this[index], Number(index), this)){
+                return false;
+            }
+        }
+    }
+    return true;
+}
