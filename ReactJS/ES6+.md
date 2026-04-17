@@ -91,7 +91,7 @@ console.log(r); // Kết quả: Red
 console.log(g); // Kết quả: Green
 ```
 ## 8.Rest Parameters
-- Gom các phần còn lại vào 1 mảng.
+- `Lấy các phần tử còn lại` vào `1 mảng`.
 - Khi không biết chắc có bao nhiêu tham số truyền vào
 - Cú pháp:
 ```javascript
@@ -114,6 +114,7 @@ console.log(sum(1, 2, 3, 4, 5));    // Kết quả: 15
 ## 9.Spread
 - Toán tử rải `...`(ngược với Rest)
 - Sao chép mảng hoặc đối tượng. Dùng để cập nhật state mà không làm thay đổi state cũ.
+- Bỏ ngoặc đi và lấy các phần tử vào trong.
 ```javascript
 const oldList = [1, 2];
 const newList = [...oldList, 3, 4]; 
@@ -163,3 +164,41 @@ const courseNew = {
 
 console.log(courseNew); // Kết quả: { name: 'ReactJS', price: 500 }
 ```
+## 11.Tagged Template Literal
+- Sử dụng 1 hàm để xử lý chuỗi.
+```javascript
+function highlight(strings, ...values) {
+  return `<b>${values[0]}</b>`; // Xử lý biến bên trong chuỗi theo cách riêng
+}
+const user = "Admin";
+const result = highlight`Chào ${user}`; // Hàm highlight sẽ xử lý chuỗi này.
+```
+- Ví dụ:
+```javascript
+function highlight(strings, ...values) {
+    console.log("Mảng chuỗi (strings):", strings);
+    console.log("Mảng biến (values):", values);
+    //string: chứa các đoạn chữ tĩnh: [Khoá học, này là, !]
+    //values: là 1 mảng chứa gtri các biến truyền vào:[ReactJS, Miễn phí]
+    return "Kết quả tùy chỉnh";
+}
+
+const course = "ReactJS";
+const price = "Miễn phí";
+
+// Gọi hàm highlight bằng cú pháp Tagged Template
+const message = highlight`Khóa học ${course} này là ${price}!`;
+```
+## 12.Modules
+- Chia nhỏ code ra nhiều file(`import`: nạp vào, và `export`: xuất ra)
+- Giúp quản lý dự án React lớn, mỗi Component là 1 file.
+```javascript
+// file Component.js
+export const MyComponent = () => {}; 
+
+// file App.js
+import { MyComponent } from './Component.js'; 
+// Import để sử dụng lại ở file khác.
+```
+## Ví dụ cụ thể về Modules.
+- Giả sử ta có 2 file math.js (chứa các hàm tính toán) và main.js(file chính để chạy ứng dụng).
