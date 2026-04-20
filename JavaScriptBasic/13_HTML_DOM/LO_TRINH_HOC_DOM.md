@@ -69,8 +69,6 @@
 
 ## 🌲 NHÓM 5: DUYỆT CÂY DOM (13.18 - 13.20)
 
-**Trạng thái:** ⬜ Chưa học
-
 ### Kiến thức trọng tâm:
 - [ ] 13.18 - `parentNode` và `parentElement`
 - [ ] 13.19 - `childNodes`, `children`, `firstChild`, `lastChild`
@@ -84,8 +82,6 @@
 ---
 
 ## 🎪 NHÓM 6: EVENTS (13.21 - 13.27)
-
-**Trạng thái:** ⬜ Chưa học
 
 ### Kiến thức trọng tâm:
 - [ ] 13.21 - Event là gì? Event listener
