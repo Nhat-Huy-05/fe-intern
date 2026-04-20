@@ -2,9 +2,9 @@
 
 ---
 
-## 13.1 - DOM là gì?
+# 13.1 - DOM là gì?
 
-### Lý thuyết
+## Lý thuyết
 
 **DOM (Document Object Model)** là mô hình đối tượng tài liệu - cây đối tượng biểu diễn toàn bộ HTML thành bộ nhớ.
 
@@ -16,7 +16,7 @@ Khi trình duyệt đọc file HTML, nó không hiển thị thẳng ra — nó 
 - Thêm/xóa phần tử
 - Phản ứng với sự kiện người dùng
 
-### Ví dụ
+## Ví dụ
 
 ```html
 <!DOCTYPE html>
@@ -39,7 +39,7 @@ Khi trình duyệt đọc file HTML, nó không hiển thị thẳng ra — nó 
 - `.innerHTML` - Thay đổi nội dung HTML bên trong
 
 ---
-- Cây DOM trông như thế nào?
+## Cây DOM trông như thế nào?
 ```
         document
             |
@@ -52,11 +52,23 @@ Khi trình duyệt đọc file HTML, nó không hiển thị thẳng ra — nó 
 ```
 
 +,Quan hệ trong cây: document là gốc -> html -> body -> các thẻ con bên trong body.
+## HTML DOM và DOM API - Khác nhau thế nào?
+ | HTML DOM | DOM API |
+ | :-- | :-- |
+ | Là cấu trúc dữ liệu - các cây mà trình duyệt tạo ra từ HTML, tồn tại trong bộ nhớ. | Là bộ công cụ - tập hợp các lệnh JS dùng để tương tác với cây DOM đó. |
 
+ - Ví dụ cụ thể: HTML DOM: ngôi nhà
+                 DOM API: chìa khoá vào và sửa nhà.
+ - Khi viết document.getElementById('title') - đó là bạn đang dùng DOM API để truy cập vào HTML DOM.
+ ```
+ // Dùng DOM API để lấy node trong HTML DOM
+const tieu_de = document.getElementById('title');
+tieu_de.textContent = 'Xin chào!'; // sửa nội dung
+ ```
 
-## 13.2 - Cấu trúc cây DOM
+# 13.2 - Cấu trúc cây DOM
 
-### Lý thuyết
+## Lý thuyết
 
 HTML được biểu diễn dưới dạng **cây DOM** với các node:
 
@@ -76,7 +88,7 @@ Document
 3. **Attribute Node**: Các thuộc tính (`id`, `class`, `src`)
 4. **Comment Node**: Comment HTML (`<!-- comment -->`)
 
-### Ví dụ
+## Ví dụ
 
 ```html
 <div id="container">
@@ -103,20 +115,28 @@ console.log(div.firstElementChild); // Element con đầu tiên
 
 ---
 
-## 13.3 - Document Object và Window Object
+# 13.3 - Document Object và Window Object
 
-### Lý thuyết
+## Lý thuyết
 
-#### Document Object
+## Document Object
 `document` đại diện cho toàn bộ trang HTML.
 
 **Thuộc tính thường dùng:**
 ```javascript
 document.title          // Tiêu đề trang
-document.URL            // URL hiện tại
+document.URL            // URL hiện tại (địa chỉ trang hiện tại)
 document.body           // Thẻ <body>
 document.head           // Thẻ <head>
+document.documentElement // Thẻ <html>
 ```
+- Ví dụ thực tế:
+```
+console.log(document.title); // in ra tiêu đề trang
+document.title = 'Trang mới'; // đổi tiêu đề tab
+```
+- **Lưu ý**: `document` là "cửa vào" duy nhất để làm việc với DOM. Không có document thì không làm gì được.
+- Ngoài ra còn có `window` - đại diện cho cửa sổ trình duyệt, window chứa document bên trong nó.
 
 **Phương thức thường dùng:**
 ```javascript
@@ -125,7 +145,7 @@ document.querySelector()
 document.createElement()
 ```
 
-#### Window Object
+## Window Object
 `window` là đối tượng toàn cục, đại diện cho cửa sổ trình duyệt.
 
 **Thuộc tính thường dùng:**
@@ -141,8 +161,12 @@ window.alert()          // Hiển thị thông báo
 window.confirm()        // Hộp thoại xác nhận
 window.prompt()         // Hộp thoại nhập liệu
 ```
-
-#### Sự khác biệt
+**4 loại Node quan trọng:**
+- Element node: các loại thẻ dùng nhiều `<div>,<p>, <h1>`
+- Text node: văn bản bên trong thẻ `<p></p>`
+- Attribute node: thuộc tính thẻ `id,class,href`
+- Document node: Gốc của cây `document`
+## Sự khác biệt
 
 | Window | Document |
 |--------|----------|
@@ -150,7 +174,7 @@ window.prompt()         // Hộp thoại nhập liệu
 | Đại diện cửa sổ trình duyệt | Đại diện trang HTML |
 | `window.alert()` | `document.getElementById()` |
 
-### Ví dụ
+## Ví dụ
 
 ```html
 <!DOCTYPE html>
