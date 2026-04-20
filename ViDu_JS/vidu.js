@@ -1,7 +1,14 @@
-var number = [1, 2, 3, 4, 5 , 6 , 7 , 8 , 9 , 10];
-number.forEach(num1 => {
-    const isLeft19 = number.every(num =>  num + num1 < 19)
-    console.log(isLeft19);
+function bai1() {
+    // Bước 1: Lấy phần tử có id="demo"
+    const element = document.getElementById("demo");
     
-});
-
+    // Bước 2: Thay đổi nội dung HTML bên trong
+    element.innerHTML = "Goodbye";
+    
+    /* GIẢI THÍCH:
+     * - document.getElementById("demo"): Tìm phần tử có id="demo"
+     * - innerHTML: Thuộc tính để đọc/ghi nội dung HTML bên trong thẻ
+     * - Gán giá trị mới "Goodbye" sẽ thay thế nội dung cũ "Hello"
+     */
+}
+bai1();
