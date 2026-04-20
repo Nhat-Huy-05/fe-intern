@@ -8,7 +8,7 @@
 
 **DOM (Document Object Model)** là mô hình đối tượng tài liệu - cây đối tượng biểu diễn toàn bộ HTML thành bộ nhớ.
 
-Khi trình duyệt đọc file HTML, nó chuyển HTML thành cây DOM. JavaScript dùng cây này để đọc, sửa, thêm, xóa bất kỳ thứ gì trên trang.
+Khi trình duyệt đọc file HTML, nó không hiển thị thẳng ra — nó chuyển toàn bộ HTML thành một cây đối tượng trong bộ nhớ. Cây đó gọi là DOM (Document Object Model). JavaScript dùng cây này để đọc, sửa, thêm, xóa bất kỳ thứ gì trên trang.
 
 **Tại sao cần DOM?**
 - Thay đổi nội dung HTML động
@@ -39,6 +39,20 @@ Khi trình duyệt đọc file HTML, nó chuyển HTML thành cây DOM. JavaScri
 - `.innerHTML` - Thay đổi nội dung HTML bên trong
 
 ---
+- Cây DOM trông như thế nào?
+```
+        document
+            |
+          <html>
+            |
+          <body>
+         /      \  
+        /        \
+  <h1>"xin chào"   <p>"Đoạn văn"  
+```
+
++,Quan hệ trong cây: document là gốc -> html -> body -> các thẻ con bên trong body.
+
 
 ## 13.2 - Cấu trúc cây DOM
 
