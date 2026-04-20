@@ -6,8 +6,6 @@
 
 ## 📚 NHÓM 1: NHẬP MÔN (13.1 - 13.3)
 
-**Trạng thái:** ⬜ Chưa học
-
 ### Kiến thức trọng tâm:
 - [ ] 13.1 - DOM là gì?
 - [ ] 13.2 - Cấu trúc cây DOM (DOM Tree)
@@ -21,8 +19,6 @@
 ---
 
 ## 🎯 NHÓM 2: GET ELEMENT (13.4 - 13.7)
-
-**Trạng thái:** ⬜ Chưa học
 
 ### Kiến thức trọng tâm:
 - [ ] 13.4 - `getElementById()`
@@ -38,8 +34,6 @@
 ---
 
 ## 🔧 NHÓM 3: NODE & THUỘC TÍNH (13.8 - 13.12)
-
-**Trạng thái:** ⬜ Chưa học
 
 ### Kiến thức trọng tâm:
 - [ ] 13.8 - `innerHTML` và `outerHTML`
@@ -57,8 +51,6 @@
 ---
 
 ## ✨ NHÓM 4: TẠO & THAO TÁC PHẦN TỬ (13.13 - 13.17)
-
-**Trạng thái:** ⬜ Chưa học
 
 ### Kiến thức trọng tâm:
 - [ ] 13.13 - `createElement()`
@@ -114,8 +106,6 @@
 
 ## 🚀 NHÓM 7: DỰ ÁN THỰC HÀNH (13.28 - 13.30)
 
-**Trạng thái:** ⬜ Chưa học
-
 ### Dự án thực hành:
 - [ ] 13.28 - Dự án 1: Todo List App
   - Thêm/xóa/sửa task
@@ -136,25 +126,6 @@
 - Áp dụng tất cả kiến thức đã học
 - Xây dựng ứng dụng thực tế
 - Debug và tối ưu code
-
----
-
-## 📊 TIẾN ĐỘ HỌC TẬP
-
-| Nhóm | Tên nhóm | Trạng thái |
-|------|----------|------------|
-| 1 | Nhập môn | ⬜ Chưa học |
-| 2 | Get element | ⬜ Chưa học |
-| 3 | Node & Thuộc tính | ⬜ Chưa học |
-| 4 | Tạo & thao tác phần tử | ⬜ Chưa học |
-| 5 | Duyệt cây DOM | ⬜ Chưa học |
-| 6 | Events | ⬜ Chưa học |
-| 7 | Dự án thực hành | ⬜ Chưa học |
-
-**Cách cập nhật trạng thái:**
-- ⬜ Chưa học
-- 🔄 Đang học
-- ✅ Đã xong
 
 ---
 
@@ -194,4 +165,3 @@
 
 ---
 
-**Chúc bạn học tốt! 🎉**
