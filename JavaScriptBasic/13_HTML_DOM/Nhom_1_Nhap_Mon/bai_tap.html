@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Nhóm 1 - Nhập môn DOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .exercise {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        #result {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e8f5e9;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎯 BÀI TẬP NHÓM 1: NHẬP MÔN DOM</h1>
+
+    <!-- BÀI TẬP 1 -->
+    <div class="exercise">
+        <h2>Bài 1: Thay đổi nội dung</h2>
+        <p id="demo">Hello</p>
+        <button onclick="bai1()">Đổi thành "Goodbye"</button>
+    </div>
+
+    <!-- BÀI TẬP 2 -->
+    <div class="exercise">
+        <h2>Bài 2: Thay đổi màu chữ</h2>
+        <h1 id="title">Tiêu đề</h1>
+        <button onclick="bai2()">Đổi màu đỏ</button>
+    </div>
+
+    <!-- BÀI TẬP 3 -->
+    <div class="exercise">
+        <h2>Bài 3: Cấu trúc cây DOM</h2>
+        <div id="container">
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+        <button onclick="bai3()">Xem cấu trúc (mở Console F12)</button>
+    </div>
+
+    <!-- BÀI TẬP 4 -->
+    <div class="exercise">
+        <h2>Bài 4: Document & Window</h2>
+        <button onclick="bai4()">Xem thông tin trang</button>
+        <div id="result"></div>
+    </div>
+
+    <!-- BÀI TẬP 5 -->
+    <div class="exercise">
+        <h2>Bài 5: Prompt & Alert</h2>
+        <button onclick="bai5()">Nhập tên và chào</button>
+    </div>
+
+    <script src="bai_tap.js"></script>
+</body>
+</html>
