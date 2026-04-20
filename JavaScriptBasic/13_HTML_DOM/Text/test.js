@@ -1,8 +1,6 @@
-const btn = document.getElementById('btn');
-const tieuDe = document.getElementById('tieu-de');
-const moTa = document.getElementById('mo-ta');
+const titlteElement = document.getElementById("title");
+titlteElement.innerHTML = "Hello";
 
-btn.addEventListener('click', function() {
-  tieuDe.innerHTML = 'Đã thay đổi! 🎉';
-  moTa.textContent = 'innerHTML và textContent hoạt động rồi.';
-});
+const textElement = document.getElementsByClassName("text");
+textElement[0].innerHTML = "Đã thay đổi dòng 1.";
+//chọn dòng có kiểu text, để thay đổi.

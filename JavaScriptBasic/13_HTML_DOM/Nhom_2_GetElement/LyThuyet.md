@@ -73,7 +73,7 @@ const all = document.getElementsByTagName('*');
 ```
 - Dùng khi muốn lấy tất cả thẻ cùng loại
 - Hạn chế: không lọc được theo class hay id, chỉ theo tên thẻ.
-### 4, 5.`querySelector & querySelectorAll
+### 4,5.`querySelector & querySelectorAll`
 - Hai phương thức này dùng CSS selector
 ```javascript
 // querySelector — lấy phần tử ĐẦU TIÊN khớp
