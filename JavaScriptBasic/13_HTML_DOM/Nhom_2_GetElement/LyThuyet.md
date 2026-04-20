@@ -4,6 +4,18 @@
 
 `Get element` = bước đầu tiên bắt buộc mọi thao tác DOM. Không tìm được phần tử thì không làm gì được.
 
+# Trong JavaScript, có 5 phương thức chính để đi tìm và lấy phần tử từ trang HTML:
+
+- 13.4 - `getElementById("id_name")`: Tìm phần tử dựa vào thuộc tính id. Vì ID là duy nhất trên một trang web, phương thức này trả về 1 phần tử duy nhất (hoặc null nếu không tìm thấy).
+
+- 13.5 - `getElementsByClassName("class_name")`: Tìm phần tử dựa vào thuộc tính class. Vì nhiều thẻ có thể dùng chung một class, phương thức này trả về một danh sách các phần tử (gọi là HTMLCollection).
+
+- 13.6 - `getElementsByTagName("tag_name")`: Tìm phần tử dựa vào tên thẻ HTML (ví dụ: h1, p, div). Tương tự class, nó trả về một danh sách (HTMLCollection).
+
+- 13.7 - `querySelector("css_selector")`: Tìm phần tử dựa trên cú pháp CSS (giống hệt cách bạn viết CSS). Nó rất linh hoạt nhưng chỉ trả về phần tử đầu tiên mà nó tìm thấy.
+
+- 13.7 - `querySelectorAll("css_selector")`: Giống hệt querySelector, nhưng nó sẽ tìm và trả về tất cả các phần tử khớp với cú pháp CSS, kết quả là một danh sách gọi là NodeList.
+
 ## 5 phương thức chính để tìm phần tử.
 ### 1.`getElementById` - tìm theo ID
 - Tìm đúng 1 phần tử có `id` khớp.
@@ -19,7 +31,7 @@ console.log(box); // -> <div id = "box"> .. </div>
 
 - Trả về 1 element duy nhất(hoặc `null` nếu không tìm thấy.)
 - Không có dấu `#` phía trước - chỉ viết tên `id`
-```
+```javascript
 //Sai - không thêm dấu # vào.
 document.getElementById('#box'); // -> null
 

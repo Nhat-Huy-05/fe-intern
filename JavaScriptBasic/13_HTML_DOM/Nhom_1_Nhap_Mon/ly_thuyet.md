@@ -215,3 +215,22 @@ window.prompt()         // Hộp thoại nhập liệu
 ✅ **Window** đại diện cho cửa sổ trình duyệt, là đối tượng toàn cục
 
 ✅ Dùng `getElementById()` để lấy phần tử, `innerHTML` để thay đổi nội dung
+
+
+ ## Cú pháp & Ví dụ
+// 1. Kiểm tra đối tượng Window
+console.log(window); 
+// Sẽ in ra một object khổng lồ chứa mọi thông tin về cửa sổ trình duyệt (độ phân giải, lịch sử, local storage...)
+
+// 2. Kiểm tra đối tượng Document
+console.log(document); 
+// Sẽ in ra cấu trúc HTML của trang web hiện tại
+
+// 3. Xem title của trang web thông qua document
+console.log(document.title);
+
+// 4. Đổi title của trang web (Thao tác DOM cơ bản nhất)
+document.title = "Đã thay đổi Title bằng JS!";
+
+// 5. Mối quan hệ giữa window và document
+console.log(window.document === document); // Kết quả: true
