@@ -1,4 +1,4 @@
-Chuẩn bị: Hãy copy đoạn HTML dưới đây và dán đè vào phần <body> trong file index.html của bạn:
+Chuẩn bị: Hãy copy đoạn HTML dưới đây và dán đè vào phần `<body>` trong file index.html của bạn:
 
 `HTML`:
 ```

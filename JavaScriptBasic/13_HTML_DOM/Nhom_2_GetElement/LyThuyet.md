@@ -6,7 +6,7 @@
 
 # Trong JavaScript, có 5 phương thức chính để đi tìm và lấy phần tử từ trang HTML:
 
-- 13.4 - `getElementById("id_name")`: Tìm phần tử dựa vào thuộc tính id. Vì ID là duy nhất trên một trang web, phương thức này trả về 1 phần tử duy nhất (hoặc null nếu không tìm thấy).
+- 13.4 - `getElementById("id_name")`: Tìm phần tử dựa vào thuộc tính Id. Vì ID là duy nhất trên một trang web, phương thức này trả về 1 phần tử duy nhất (hoặc null nếu không tìm thấy).
 
 - 13.5 - `getElementsByClassName("class_name")`: Tìm phần tử dựa vào thuộc tính class. Vì nhiều thẻ có thể dùng chung một class, phương thức này trả về một danh sách các phần tử (gọi là HTMLCollection).
 
@@ -16,9 +16,13 @@
 
 - 13.7 - `querySelectorAll("css_selector")`: Giống hệt querySelector, nhưng nó sẽ tìm và trả về tất cả các phần tử khớp với cú pháp CSS, kết quả là một danh sách gọi là NodeList.
 
+**Các lưu ý nhỏ**: 
+- Sai lầm phổ biến nhất: Khi dùng getElementsByClassName, getElementsByTagName hoặc querySelectorAll, bạn KHÔNG THỂ thao tác trực tiếp lên kết quả (VD: elements.innerHTML = "Hello" là SAI). Vì nó là một danh sách, bạn phải chỉ rõ muốn thao tác trên phần tử thứ mấy (VD: elements[0].innerHTML = "Hello").
+- Trong querySelector, nhớ dùng dấu # cho ID và dấu . cho class (VD: #demo, .box).
+
 ## 5 phương thức chính để tìm phần tử.
 ### 1.`getElementById` - tìm theo ID
-- Tìm đúng 1 phần tử có `id` khớp.
+- Tìm đúng 1 phần tử có `Id` khớp.
 ```javascript
 //Cú pháp
 document.getElementById('tên-id')
