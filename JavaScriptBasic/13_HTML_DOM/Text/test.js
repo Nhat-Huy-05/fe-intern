@@ -27,6 +27,6 @@ nameInput.addEventListener("input",function(e){
     }
     else {
         //Nối chuỗi để in ra lời chào
-        greeting.innerText = "Xin chào, " + tenVuaGhi + "!";
+        greeting.innerText = "Xin chào, " + tenVuaGhi + "!"; 
     }
-})
+}) //khi user ghi tên thì sẽ tự động in ra tên.
