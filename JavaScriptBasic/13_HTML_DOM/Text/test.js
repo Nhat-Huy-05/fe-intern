@@ -18,7 +18,7 @@ const nameInput = document.getElementById("nameInput");
 const greeting = document.getElementById("greeting");
 
 //Lắng nghe khi người dùng gõ phím
-nameInput.addEventListener("input",funcion(e){
+nameInput.addEventListener("input",function(e){
     const tenVuaGhi = e.target.value;  //lấy gtri vừa ghi
 
     //Kiểm tra nếu ô input trống
