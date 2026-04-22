@@ -1,0 +1,121 @@
+/* 1. KHAI BÁO BIẾN - Sửa 1 nơi, đổi cả app */
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --bg-body: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #1e293b;
+  --text-sub: #64748b;
+  --border: #e2e8f0;
+  --radius: 8px;
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+/* 2. RESET - Giúp mọi trình duyệt hiển thị giống nhau */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  display: flex;
+  justify-content: center; /* Căn giữa ngang */
+  padding-top: 50px;
+}
+
+/* 3. LAYOUT CHÍNH */
+.app-container {
+  background: var(--bg-card);
+  width: 100%;
+  max-width: 450px; /* Giới hạn độ rộng của App */
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.app-header p {
+  color: var(--text-sub);
+  font-size: 0.9rem;
+}
+
+.app-footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border);
+    color: var(--text-sub);
+    font-size: 0.85rem;
+    text-align: left;
+}
+
+/* 4. INPUT SECTION */
+#todo-form {
+  display: flex;
+  gap: 10px; /* Khoảng cách giữa ô input và nút */
+  margin-bottom: 1.5rem;
+}
+
+#todo-input {
+  flex: 1; /* Để ô input tự động chiếm hết khoảng trống còn lại */
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  outline: none;
+}
+
+#todo-input:focus {
+  border-color: var(--primary);
+}
+
+#add-btn {
+  padding: 0 20px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+#add-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+/* 5. FILTER BAR */
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+  background: none;
+  border: 1px solid var(--border);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: var(--text-sub);
+}
+
+.filter-btn.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
