@@ -1,14 +1,32 @@
-//Chỉ dùng getElement đúng 1 lần để lấy mốc "Tôi"
-const toi = document.getElementById("toi")
+//1, Sự kiện chuột
+const box = document.getElementById("box")
 
-//1. Tìm thẻ <p> của Anh trai(ptu phía trước) và đổi chữ
-const anhTrai = toi.previousElementSibling;
-anhTrai.innerText = "JS đổi tên";
+//Lắng nghe khi chuột đi vào
+box.addEventListener("mouseenter",function(){
+    box.innerText = "Chuột đang ở trong";
+    box.style.backgroundColor = "yellow";
+}) //chuột vào sẽ đổi màu
 
-//2.Tìm thẻ <p> của em gái(phần tử phía sau) và đổi màu chữ
-const emGai = toi.nextElementSibling;
-emGai.style.color = "pink";
+//Lắng nghe khi chuột đi ra
+box.addEventListener("mouseleave",function(){
+    box.innerText = "Rê chuột vào đây";
+    box.style.backgroundColor = "lightgray";
+})
 
-//3.Tìm thẻ <div> của bố(phần tử cha bọc bên ngoài) và thêm class
-const bo = toi.parentElement;
-bo.classList.add("dad-class");
+//2, Sự kiện bàn phím
+const nameInput = document.getElementById("nameInput");
+const greeting = document.getElementById("greeting");
+
+//Lắng nghe khi người dùng gõ phím
+nameInput.addEventListener("input",funcion(e){
+    const tenVuaGhi = e.target.value;  //lấy gtri vừa ghi
+
+    //Kiểm tra nếu ô input trống
+    if(tenVuaGhi === ""){
+        greeting.innerText = "Xin chào, ..."
+    }
+    else {
+        //Nối chuỗi để in ra lời chào
+        greeting.innerText = "Xin chào, " + tenVuaGhi + "!";
+    }
+})
