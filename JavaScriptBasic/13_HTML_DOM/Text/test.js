@@ -1,18 +1,14 @@
-//1, tóm lấy thẻ div có id "container"
-const container = document.getElementById("container");
+//Chỉ dùng getElement đúng 1 lần để lấy mốc "Tôi"
+const toi = document.getElementById("toi")
 
-//2. tạo ra 1 thẻ <button> mới (đang lơ lửng)
-const newButton = document.createElement("button");
+//1. Tìm thẻ <p> của Anh trai(ptu phía trước) và đổi chữ
+const anhTrai = toi.previousElementSibling;
+anhTrai.innerText = "JS đổi tên";
 
-//3. cài đặt nội dung chữ cho nút.
-newButton.innerText = "Click here!";
+//2.Tìm thẻ <p> của em gái(phần tử phía sau) và đổi màu chữ
+const emGai = toi.nextElementSibling;
+emGai.style.color = "pink";
 
-//4. Gắn nút mới vào bên trong thẻ container (nó sẽ tự động nằm ở cuối)
-container.appendChild(newButton);
-
-//5. Tóm thẻ <p> cũ và xoá đi
-const pOld = document.getElementById("p-old");
-container.removeChild(pOld);
-
-
-
+//3.Tìm thẻ <div> của bố(phần tử cha bọc bên ngoài) và thêm class
+const bo = toi.parentElement;
+bo.classList.add("dad-class");
