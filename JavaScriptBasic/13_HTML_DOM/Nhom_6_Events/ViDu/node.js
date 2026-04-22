@@ -10,3 +10,12 @@ btn.addEventListener("click", function(){
 })
 
 //2. Lắng nghe sự kiện gõ phím(input) và lấy giá trị(e.target.value)
+myInput.addEventListener("input", function(e){
+    console.log("Bạn đang gõ:" + e.target.value);
+})
+
+//3. Ngăn chặn hành vi mặc định (preventDefault)
+linkGG.addEventListener("click", function(e){
+    e.preventDefault()//Chặn việc chuyển hướng sang Google
+    alert("Đã chặn chuyển trang !"); 
+}); //chặn việc chuyển hướng sang gg
