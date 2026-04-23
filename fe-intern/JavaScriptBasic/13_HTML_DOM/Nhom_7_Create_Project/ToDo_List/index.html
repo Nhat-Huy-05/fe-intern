@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app-container">
+        <h2>📝 Todo List Của Tôi</h2>
+        
+        <div class="flex-row">
+            <input type="text" id="taskInput" placeholder="Nhập công việc mới...">
+            <button id="addBtn">Thêm</button>
+        </div>
+
+        <!-- Bộ lọc -->
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">Tất cả</button>
+            <button class="filter-btn" data-filter="completed">Đã xong</button>
+            <button class="filter-btn" data-filter="pending">Chưa xong</button>
+        </div>
+
+        <ul id="taskList">
+            </ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
