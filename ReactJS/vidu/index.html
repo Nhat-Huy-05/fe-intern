@@ -1,33 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <meta charset="UTF-8" />
-    <title>React JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học React cơ bản</title>
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
+
     <div id="root"></div>
 
     <script type="text/babel">
-      //tạo biến courseName, price
-        const courseName = "ReactJS Cơ Bản";
-        const price = 1500000;
+        const students = [
+            { id: 1, name: "Nguyễn Văn A" },
+            { id: 2, name: "Trần Thị B" },
+            { id: 3, name: "Lê Văn C" }
+        ];
 
-        const courseElement = (
-          //tạo khối JSX
-            <div className="course-card">
-                {/* Sửa lại tên biến ở đây */}
-                <h2>{courseName}</h2>
-                {/* Nhớ đóng thẻ img bằng /> */}
-                <img src="https://images.viblo.asia/1d949589-afdd-4a1e-b77f-c53fdaf8af13.png" alt="course" />
-                <p>Giá khóa học: {price / 1000}k</p>
+        const element = (
+            <div>
+                <h3>Danh sách học viên:</h3>
+                <ul>
+                    {students.map((student) => (
+                        <li key={student.id}>
+                            {student.name}
+                        </li>
+                    ))}
+                </ul>
             </div>
         );
 
+        // 3. Hiển thị (Render) element vào trong thẻ div#root
         const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(courseElement);
+        root.render(element);
     </script>
+
 </body>
 </html>
