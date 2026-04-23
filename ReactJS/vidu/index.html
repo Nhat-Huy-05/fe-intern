@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ví dụ JSX</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // Khai báo biến
+        const userName = "Nguyễn Văn A";
+        const age = 21;
+
+        // Tạo React Element bằng JSX
+        const element = (
+          <div className="user-info">
+            <h1>Xin chào, {userName}!</h1>
+            <p>Bạn {age} tuổi.</p>
+            <p>Năm sinh của bạn là: {2026 - age}</p>
+          </div>
+        );
+
+        // 5. Yêu cầu React lấy 'element' ở trên và nhét vào cái thùng chứa có id là 'root'
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(element);
+    </script>
+</body>
+</html>

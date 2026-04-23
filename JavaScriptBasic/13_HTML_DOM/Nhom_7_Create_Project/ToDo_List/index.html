@@ -3,55 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List App - Quản lý công việc</title>
+    <title>Todo List App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="app-container">
-        <header class="app-header">
-            <h1>Todo List</h1>
-            <p>Quản lý và theo dõi công việc hàng ngày của bạn</p>
-        </header>
 
-        <section class="input-section">
-            <form id="todo-form">
-                <input 
-                    type="text" 
-                    id="todo-input" 
-                    placeholder="Nhập công việc mới..." 
-                    required
-                    //khi có từ khoá required, đang ra lệnh cho trình duyệt:"k được để ô này trống khi nhấn nút Thêm".
+    <div id="app-container">
+        <h2>📝 Todo List Của Tôi</h2>
+        
+        <div class="flex-row">
+            <input type="text" id="taskInput" placeholder="Nhập công việc mới...">
+            <button id="addBtn">Thêm</button>
+        </div>
 
-                >
-                <button type="submit" id="add-btn">Thêm task</button>
-            </form>
-        </section>
-
-        <nav class="filter-bar">
+        <!-- Bộ lọc -->
+        <div class="filter-bar">
             <button class="filter-btn active" data-filter="all">Tất cả</button>
-            <button class="filter-btn" data-filter="active">Chưa làm</button>
             <button class="filter-btn" data-filter="completed">Đã xong</button>
-        </nav>
+            <button class="filter-btn" data-filter="pending">Chưa xong</button>
+        </div>
 
-        <section class="list-section">
-            <ul id="todo-list">
-                <li class="todo-item">
-                    <div class="todo-content">
-                        <input type="checkbox" class="todo-checkbox">
-                        <span>Học HTML cơ bản</span>
-                    </div>
-                    <div class="todo-actions">
-                        <button class="edit-btn">Sửa</button>
-                        <button class="delete-btn">Xóa</button>
-                    </div>
-                </li>
+        <ul id="taskList">
             </ul>
-        </section>
-
-        <footer class="app-footer">
-            <span id="items-left">Còn 3 việc cần làm</span>
-        </footer>
-    </main>
+    </div>
 
     <script src="main.js"></script>
 </body>
