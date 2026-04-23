@@ -53,3 +53,7 @@
 </body>
 </html>
 ```
+**Lưu ý:** 
+- Cần thư viện React thì trình duyệt mới hiểu được JSX là gì.
+- Kéo các thư viện React và Babel vào qua link CDN, tạo 1 thẻ `div` làm gốc, và dùng thẻ `<script type = "text/babel">`.
+
