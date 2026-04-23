@@ -1,0 +1,12 @@
+1,Tạo 1 file tên: index.md. Cần kiểm tra xem git có nhìn thấy không?
+-Câu lệnh: git status
+-Kết quả: Git sẽ báo file index.md đang ở mục Untracked Files(màu đỏ),nghĩa là Git đã thấy file nhưng chưa theo dõi nó.
+2,Ta đưa file vào "Vùng chờ"(Staging Area):
+-Câu lệnh: git add index.md
+(Hoặc git add . nếu muốn có nhiều file mới và muốn thêm hết 1 lượt) -> đề xuất sử dụng git add . 
+-Ta kiểm tra lại: gõ git status, bây giờ file sẽ chuyển sang màu xanh trong mục Changes to be committed.
+3, Lưu lại lịch sử(Commit):
+-Câu lệnh: git commit -m "Khởi tạo file index cho trang chủ".
+KQ: Git tạo 1 mã định danh (hash) cho thay đổi này. Đã có 1 "điểm phục hồi" an toàn
+ (như kiểu save game sẽ có mục mình đã lưu và có thể quay lại đó,ví dụ thực tế là khi lỡ xoá 1 đoạn code quan trọng hoặc
+sửa file sai thì chỉ cần dùng câu lệnh đưa toàn bộ dự án quay về trạng thái 1 commit cũ đang chạy ổn định). 
