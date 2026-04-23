@@ -14,13 +14,14 @@
 </div>
 ```
 Nhiệm vụ trong file vidu.js:
-Bạn chỉ được phép dùng document.getElementById duy nhất 1 lần để tóm lấy phần tử có id là toi. Sau đó, từ phần tử mốc này, hãy dùng các lệnh Duyệt cây DOM (không dùng getElement nữa) để hoàn thành các yêu cầu sau:
 
-1. Tìm thẻ `<p>` của Anh trai và đổi chữ thành "Anh trai đã bị JS đổi tên".
+1. Chỉ được phép dùng `document.getElementById` duy nhất 1 lần để tóm lấy phần tử có id là toi. Sau đó, từ phần tử mốc này, hãy dùng các lệnh Duyệt cây DOM (không dùng getElement nữa) để hoàn thành các yêu cầu sau:
 
-2. Tìm thẻ `<p>` của Em gái và đổi màu chữ của em ấy thành màu hồng ("pink").
+2. Tìm thẻ `<p>` của Anh trai và đổi chữ thành "JS đổi tên".
 
-3. Tìm thẻ `<div>` của Bố, và gắn thêm cho bố một cái class mang tên "dad-class".
+3. Tìm thẻ `<p>` của Em gái và đổi màu chữ của em ấy thành màu hồng ("pink").
+
+4. Tìm thẻ `<div>` của Bố, và gắn thêm cho bố một cái class mang tên "dad-class".
 
 # Giải
 ```javascript
