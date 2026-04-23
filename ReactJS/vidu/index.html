@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Ví dụ JSX</title>
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    
+    <meta charset="UTF-8" />
+    <title>React JS</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
     <div id="root"></div>
 
     <script type="text/babel">
-        // Khai báo biến
-        const userName = "Nguyễn Văn A";
-        const age = 21;
+      //tạo biến courseName, price
+        const courseName = "ReactJS Cơ Bản";
+        const price = 1500000;
 
-        // Tạo React Element bằng JSX
-        const element = (
-          <div className="user-info">
-            <h1>Xin chào, {userName}!</h1>
-            <p>Bạn {age} tuổi.</p>
-            <p>Năm sinh của bạn là: {2026 - age}</p>
-          </div>
+        const courseElement = (
+          //tạo khối JSX
+            <div className="course-card">
+                {/* Sửa lại tên biến ở đây */}
+                <h2>{courseName}</h2>
+                {/* Nhớ đóng thẻ img bằng /> */}
+                <img src="https://images.viblo.asia/1d949589-afdd-4a1e-b77f-c53fdaf8af13.png" alt="course" />
+                <p>Giá khóa học: {price / 1000}k</p>
+            </div>
         );
 
-        // 5. Yêu cầu React lấy 'element' ở trên và nhét vào cái thùng chứa có id là 'root'
         const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(element);
+        root.render(courseElement);
     </script>
 </body>
 </html>

@@ -71,4 +71,39 @@ Hãy dùng JSX để tạo ra một đoạn giao diện hiển thị thông tin 
     - Một thẻ p hiển thị giá tiền, bên trong thẻ p này bạn hãy nhúng biến price và chia cho 1000 để hiển thị định dạng kiểu 1500k.
 
 **Lời giải:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>React JS</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      //tạo biến courseName, price
+        const courseName = "ReactJS Cơ Bản";
+        const price = 1500000;
+
+        const courseElement = (
+          //tạo khối JSX
+            <div className="course-card">
+                {/* Sửa lại tên biến ở đây */}
+                <h2>{courseName}</h2>
+                {/* Nhớ đóng thẻ img bằng /> */}
+                <img src="https://images.viblo.asia/1d949589-afdd-4a1e-b77f-c53fdaf8af13.png" alt="course" />
+                <p>Giá khóa học: {price / 1000}k</p>
+            </div>
+        );
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(courseElement);
+    </script>
+</body>
+</html>
+```
 
