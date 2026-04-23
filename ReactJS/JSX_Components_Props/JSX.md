@@ -56,4 +56,19 @@
 **Lưu ý:** 
 - Cần thư viện React thì trình duyệt mới hiểu được JSX là gì.
 - Kéo các thư viện React và Babel vào qua link CDN, tạo 1 thẻ `div` làm gốc, và dùng thẻ `<script type = "text/babel">`.
+-  Các thư viện này trên mạng, khi trình duyệt đọc file html, nó sẽ tự động chạy lên các đường link đó.
+- Phải kết nối Internet thì file HTML đó mới chạy được.
+# Bài tập:
+
+Hãy dùng JSX để tạo ra một đoạn giao diện hiển thị thông tin một khóa học với các yêu cầu sau:
+1. Có một biến courseName lưu tên khóa học (ví dụ: "ReactJS Cơ Bản").
+2. Có một biến price lưu giá tiền (ví dụ: 1500000).
+3. Tạo ra một khối JSX (courseElement) bao gồm:
+
+    - Một thẻ bọc ngoài cùng (dùng div và có class là course-card).
+    - Một thẻ h2 hiển thị tên khóa học lấy từ biến courseName.
+    - Một thẻ img hiển thị ảnh minh họa (có thể dùng một link ảnh giả lập bất kỳ, nhớ quy tắc đóng thẻ).
+    - Một thẻ p hiển thị giá tiền, bên trong thẻ p này bạn hãy nhúng biến price và chia cho 1000 để hiển thị định dạng kiểu 1500k.
+
+**Lời giải:**
 
