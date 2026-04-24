@@ -1,3 +1,4 @@
+<script type="text/babel"></script>
 //Tạo 1 funtion component tên Welcome(chữ W hoa)
 function Welcome(){
     return(
