@@ -44,7 +44,7 @@
 25. [Custom Hooks thực tế](#25-custom-hooks-thực-tế)
 
 ### **PHẦN 7: DỰ ÁN THỰC HÀNH**
-26. [Dự án tổng hợp](#26-dự-án-tổng-hợp)
+26. [Dự án tổng hợp](#26-dự-án-tổng-hợp) 
 
 ---
 
