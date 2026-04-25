@@ -25,6 +25,7 @@ const[state, setState] = useState(gia_Tri_Khoi_Tao)
 ### Ví dụ:
 ```jsx
 import { useState } from "react";
+//useState cho phép component nhớ thông tin giữa những phần render khác nhau.
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -44,3 +45,17 @@ function Counter() {
   );
 }
 ```
+- Tại sao không dùng biến thường thay vì useState?
+```jsx
+// ❌ Cách này KHÔNG hoạt động
+function Counter() {
+  let count = 0;
+
+  return (
+    <button onClick={() => count + 1}>
+      {count}
+    </button>
+  );
+}
+```
+ - Vì khi count thay đổi, React không biết để render lại - màn hình sẽ không update.

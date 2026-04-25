@@ -1,41 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React Counter</title>
-
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <div id ="root"></div>
-    <script type = "text/babel">
-        const { useState } = React;
-
-function Counter() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <button onClick={() => setCount(count + 1)}>
-      Clicked {count} times
-    </button>
-  );
-}
-
-// Tìm thẻ div có id="root" bên HTML và vẽ Counter vào đó
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <div>
-    <h1>Danh sách các bộ đếm</h1>
-    <Counter />
-    <Counter />
-    <Counter />
-  </div>
-);
-    </script>
-    
+  <script text="babel" src="main.js"></script>
 </body>
 </html>
