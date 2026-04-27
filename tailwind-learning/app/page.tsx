@@ -1,35 +1,23 @@
 export default function Home() {
   return (
-    <div className="card-wrapper min-h-screen bg-gray-50 p-10 flex flex-col items-center">
+    <div className="flex flex-col items-center gap-8 p-10 bg-gray-50 min-h-screen">
       
-      {/* 🎯 Project Card Hoàn Chỉnh */}
-      <div className="bg-white border border-gray-200 rounded-[2rem] shadow-2xl p-5 max-w-sm">
-        
-        {/* 1. Ô hình chữ nhật dùng gradient (Giả thumbnail) */}
-        <div className="w-full h-40 bg-gradient-to-tr from-blue-500 to-emerald-400 rounded-[1.5rem] mb-5"></div>
+      {/* Nút bấm (Button) với Hover, Active và Transition */}
+      <button className="bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-all duration-300 hover:bg-blue-600 hover:shadow-lg active:scale-95 active:bg-blue-700">
+        Gửi Tin Nhắn
+      </button>
 
-        {/* 2. Nội dung text */}
-        <div className="space-y-2 px-1">
-          {/* Tên project → chữ đậm, màu tối */}
-          <h2 className="text-xl font-bold text-gray-900">
-            Dự án Modern UI
-          </h2>
-          
-          {/* Mô tả ngắn → chữ nhỏ, màu xám */}
-          <p className="text-sm text-gray-500 leading-relaxed">
-            Sử dụng Tailwind CSS và Next.js để xây dựng giao diện người dùng tối giản nhưng không kém phần tinh tế.
-          </p>
-        </div>
-        
-      </div>
-
-      {/* --- Mấy cái Card cũ của bạn để bên dưới để so sánh --- */}
-      <div className="mt-10 opacity-50 scale-75">
-          <p className="text-center mb-2 text-gray-400 italic">Mấy mẫu nháp cũ của bạn:</p>
-          <div className="bg-white border border-gray-800 rounded-xl shadow-xl p-4 mb-2">
-            <p className="text-gray-800 font-semibold">Card thường</p>
-          </div>
-          <div className="bg-green-500 rounded-full w-10 h-10"></div>
+      {/* Ô nhập liệu (Input) với Focus và Transition */}
+      <input
+        type="text"
+        placeholder="Nhập email của bạn..."
+        className="w-72 border-2 border-gray-300 rounded-md px-4 py-2 outline-none transition-colors duration-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-100"
+      />
+      
+      {/* Thẻ (Card) phóng to nhẹ khi di chuột qua */}
+      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-200">
+        <h3 className="text-xl font-bold text-gray-800">Dự án 1</h3>
+        <p className="text-gray-500 mt-2">Di chuột vào tôi để xem hiệu ứng nổi lên!</p>
       </div>
 
     </div>
