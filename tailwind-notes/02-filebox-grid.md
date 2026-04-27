@@ -1,4 +1,5 @@
 # Topic 2: Flexbox & Grid
+## Flexbox
 - Flexbox là gì?
 
 Flexbox giúp sắp xếp các element(phần tử) theo hàng ngang hoặc dọc 1 cách linh hoạt.
@@ -33,3 +34,48 @@ Không có flex:          Có flex:
     gap-x-4       → khoảng cách ngang
     gap-y-4       → khoảng cách dọc
     ```
+- Ví dụ:
+```jsx
+export default function Home() {
+  return (
+    <div className="flex flex-col justify-between items-center p-4 bg-black-200">
+      <p>Logo</p>
+      <p>About</p>
+      <p>Contact</p>
+    </div>
+  )
+}
+```
+## Grid
+- Grid là gì?
+
+Grid giúp chia layout thành ô vuông theo hàng và cột - rất hữu ích cho danh sách card.
+```
+grid-cols-3:
+[A] [B] [C]
+[D] [E] [F]
+```
+- Các class Grid quan trọng
+```
+grid              → bật grid
+grid-cols-2       → chia 2 cột
+grid-cols-3       → chia 3 cột
+grid-cols-4       → chia 4 cột
+gap-4             → khoảng cách giữa các ô
+```
+- Ví dụ:
+```jsx
+export default function Home() {
+  return (
+    <div className="grid grid-cols-3 gap-4 p-4">
+      <div className="bg-blue-200 p-4">Card 1</div>
+      <div className="bg-blue-200 p-4">Card 2</div>
+      <div className="bg-blue-200 p-4">Card 3</div>
+      <div className="bg-blue-200 p-4">Card 4</div>
+      <div className="bg-blue-200 p-4">Card 5</div>
+      <div className="bg-blue-200 p-4">Card 6</div>
+    </div>
+  )
+}
+```
+
