@@ -20,3 +20,5 @@ Trước khi phân tích trang web của người khác, bạn cần nắm "từ
 <footer>: Phần chân trang chứa thông tin bản quyền, mạng xã hội, link liên kết.
 
 <div> và <span>: Đây là các thẻ "vô nghĩa". Chỉ nên dùng chúng làm cái hộp rỗng để bọc các phần tử lại với nhau nhằm mục đích chia Layout (dùng Flex/Grid) hoặc trang trí bằng Tailwind.
+
+<nav>: thẻ chuyển hướng.
