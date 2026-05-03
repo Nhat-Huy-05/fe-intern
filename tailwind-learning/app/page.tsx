@@ -1,11 +1,17 @@
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+
 export default function Home() {
   return (
     <main>
-      <section id="hero">Hero</section>
-      <section id="about">About</section>
-      <section id="skills">Skills</section>
-      <section id="projects">Projects</section>
-      <section id="experience">Experience</section>
+      <Navbar />
+      <Hero />
+      <About />
+      <section id="about" className="h-screen">About</section>
+      <section id="skills" className="h-screen">Skills</section>
+      <section id="projects" className="h-screen">Projects</section>
+      <section id="experience" className="h-screen">Experience</section>
     </main>
   );
 }
