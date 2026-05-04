@@ -4,7 +4,7 @@ export default function About() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 items-center">
 
         {/* Avatar */}
-        <div className="w-48 h-48 rounded-2xl bg-amber-400 flex-shrink-0 flex items-center justify-center text-5xl font-bold text-black">
+        <div className="w-48 h-48 rounded-full bg-red-400 flex-shrink-0 flex items-center justify-center text-5xl font-bold text-black">
           NH
         </div>
 
