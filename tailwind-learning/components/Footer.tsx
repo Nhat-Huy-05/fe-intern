@@ -26,7 +26,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <p className="text-gray-600 text-sm">© 2026 Nhật Huy. All rights reserved.</p>
+        <p className="text-gray-600 text-sm">© 2026 Nhat Huy. All rights reserved.</p>
 
       </div>
     </footer>
