@@ -2,11 +2,11 @@ export default function Skills() {
   const skills = [
     { name: "HTML", level: "Familiar", color: "bg-orange-100 text-orange-600" },
     { name: "CSS", level: "Familiar", color: "bg-blue-100 text-blue-600" },
-    { name: "JavaScript", level: "Familiar", color: "bg-yellow-100 text-yellow-600" },
+    { name: "JavaScript", level: "Learning", color: "bg-yellow-100 text-yellow-600" },
     { name: "React", level: "Familiar", color: "bg-cyan-100 text-cyan-600" },
     { name: "Next.js", level: "Familiar", color: "bg-gray-100 text-gray-700" },
     { name: "Tailwind CSS", level: "Familiar", color: "bg-teal-100 text-teal-600" },
-    { name: "Git / GitHub", level: "Learning", color: "bg-purple-100 text-purple-600" },
+    { name: "Git / GitHub", level: "Familiar", color: "bg-purple-100 text-purple-600" },
   ];
 
   return (
