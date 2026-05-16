@@ -60,7 +60,7 @@ max-w-xl   → giới hạn độ rộng tối đa
  export default function Home() {
   return (
     <div className="m-4 p-4 w-1/2 bg-yellow-200">
-      <p>Đây là chỗ viết content</p>
+      <p>This is content</p>
     </div>
   )
 }
